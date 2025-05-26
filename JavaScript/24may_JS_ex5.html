@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <script>
+      var n1 = parseInt(window.prompt("Enter First Number: "));
+      var n2 = parseInt(window.prompt("Enter Second Number: "));
+      var choice = window.prompt(
+        "1.ADD 2.SUBTRACT 3.MULTIPLY 4.DIVIDE\nEnter Your Choice: "
+      );
+      var result;
+      switch (choice) {
+        case "1":
+          result = n1 + n2;
+          break;
+        case "2":
+          result = n1 - n2;
+          break;
+        case "3":
+          result = n1 * n2;
+          break;
+        case "4":
+          result = n1 / n2;
+          break;
+        default:
+          result = "Invalid Choice";
+          break;
+      }
+      document.writeln(`Result: ${result}`);
+    </script>
+  </body>
+</html>

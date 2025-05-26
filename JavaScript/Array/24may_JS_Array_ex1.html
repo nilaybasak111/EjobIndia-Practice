@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <script>
+      // Array user value 10 Array Create
+      // Then Do Sum of all the elements and Display the sum
+      var sum = 0;
+      var arr = [];
+      for (let i = 0; i < 10; i++) {
+        var num = parseInt(
+          window.prompt(`Enter a number for Index ${i + 1}: `)
+        );
+        arr[i] = num;
+        sum = sum + parseInt(arr[i]);
+      }
+      document.writeln(`sum is ${sum} <br>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script>
+      // Program to find Armstrong Numbers
+      var num = parseInt(window.prompt("Enter a Number: "));
+      var c = 0,
+        sum = 0,
+        i = 0;
+      var originalNum = num;
+      var arr = [];
+      while (originalNum > 0) {
+        let rem = originalNum % 10;
+        arr[i++] = rem;
+        c++;
+        originalNum = parseInt(originalNum / 10);
+      }
+      for (let k = 0; k < arr.length; k++) {
+        sum = sum + parseInt(Math.pow(arr[k], c));
+      }
+      if (sum == num) {
+        document.writeln(`${num} is an Armstrong Number`);
+      } else {
+        document.writeln(`${num} is not an Armstrong Number`);
+      }
+    </script>
+  </body>
+</html>
