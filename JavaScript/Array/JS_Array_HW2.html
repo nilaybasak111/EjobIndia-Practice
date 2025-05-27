@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script>
+      // arr = [2, 10, 30, 15]; <-- User Input Array
+      // Find Out the Sum of the Even Indexe Values
+      var arr = [],
+        sum = 0;
+      arr = window.prompt("Enter the Array : ");
+      arr = arr.split(","); // Convert string input to array
+      for (let i = 0; i < arr.length; i = i + 2) {
+        sum = sum + parseInt(arr[i]);
+        console.log(`Sum of Even Indexe Values is up to ${arr[i]}: ${sum}`);
+      }
+      document.writeln(`Sum of Even Indexe Values is: ${sum}`);
+    </script>
+  </body>
+</html>

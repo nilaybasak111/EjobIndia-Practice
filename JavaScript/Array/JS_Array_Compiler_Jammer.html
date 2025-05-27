@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <script>
+      // This Code Run with Infinite Loop & Print Infinite Values
+      // arr = [2, 10, 30, 15]; <-- User Input Array
+      // Find Out the Sum of the Even Indexe Values
+      var arr = [],
+        sum = 0;
+      arr = window.prompt("Enter the Array : ");
+      console.log(arr);
+      for (let i = 0; i < arr.length; i + 2) {
+        sum = sum + parseInt(arr[i]);
+        console.log(`Sum of Even Indexe Values is up to ${arr[i]}: ${sum}`);
+      }
+      document.writeln(`Sum of Even Indexe Values is: ${sum}`);
+    </script>
+  </body>
+</html>
+20,10,20,30,50 
+0 1 2 3 4

@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <script>
+      /* 
+        arry1=[2,10,30,15];
+        arry2=[30,50,2,100];
+        Find the Common Elements in Two Arrays without using any built-in methods.
+      */
+      var arr1 = [],
+        arr2 = [],
+        commonArr = [],
+        index=0;
+      arr1 = window.prompt("Enter the First Array : ");
+      arr2 = window.prompt("Enter the Second Array : ");
+      arr1 = arr1.split(","); // Convert string input to array
+      arr2 = arr2.split(",");
+      for(var i=0; i<arr1.length; i++){
+        for(var j=0; j<arr2.length; j++){
+          if(arr1[i] == arr2[j]){
+            var isCommon = false;
+            for(var k=0; k<index; k++){
+              if(commonArr[k] == arr1[i]){
+                isCommon = true;
+                break;
+              }
+            }
+            if(!isCommon){
+              commonArr[index] = arr1[i];
+              index++;
+            }
+          }
+        }
+      }
+      document.writeln(`Common Elements in Two Arrays are: ${commonArr.join(", ")}`);
+    </script>
+  </body>
+</html>
