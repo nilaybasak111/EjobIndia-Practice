@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <script>
+      function displayMessage() {
+        let principal = document.ircal.pri.value;
+        let rate = document.ircal.rate.value;
+        let time = document.ircal.time.value;
+        let interest = (principal * rate * time) / 100;
+        let totalAmount = parseFloat(principal) + parseFloat(interest);
+        document.getElementById(
+          "test"
+        ).innerHTML = `Principal: ${principal}<br>Rate: ${rate}<br>Time: ${time}<br>Interest: ${interest}<br>Total Amount: ${totalAmount}`;
+      }
+    </script>
+    <h3>Interest Rate Calculator</h3>
+    <form name="ircal">
+      <label for="pri">Enter Principal Amount:</label><br />
+      <input type="number" id="pri" name="pri" /><br /><br />
+      <label for="rate">Enter Rate:</label><br />
+      <input type="number" id="rate" name="rate" /><br /><br />
+      <label for="time">Enter Time:</label><br />
+      <input type="number" id="time" name="time" /><br /><br />
+      <input type="button" value="Result" onclick="displayMessage()" />
+      <br />
+      <h3 id="test"></h3>
+    </form>
+  </body>
+</html>

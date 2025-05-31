@@ -1,0 +1,48 @@
+<html>
+  <body>
+    <script>
+      // This function adds two numbers and displays the result
+      function addNumber() {
+        let num1 = document.numOpp.num1.value;
+        let num2 = document.numOpp.num2.value;
+        let sum = parseFloat(num1) + parseFloat(num2);
+        document.getElementById(
+          "test"
+        ).innerHTML = `The Sum of ${num1} and ${num2} is ${sum}`;
+      }
+
+      // This function subtract two numbers and displays the result
+      function subNumber() {
+        let num1 = document.numOpp.num1.value;
+        let num2 = document.numOpp.num2.value;
+        let sum = parseFloat(num1) - parseFloat(num2);
+        document.getElementById(
+          "test"
+        ).innerHTML = `The Subtraction of ${num1} and ${num2} is ${sum}`;
+      }
+
+      // This function divide two numbers and displays the result
+      function divNumber() {
+        let num1 = document.numOpp.num1.value;
+        let num2 = document.numOpp.num2.value;
+        let sum = parseFloat(num1) / parseFloat(num2);
+        document.getElementById(
+          "test"
+        ).innerHTML = `The Division of ${num1} and ${num2} is ${sum}`;
+      }
+    </script>
+    <h3>Two Number Operation</h3>
+    <form name="numOpp">
+      <label for="num1">First Number:</label><br />
+      <input type="number" id="num1" name="num1" /><br /><br />
+      <label for="num2">Second Number:</label><br />
+      <input type="number" id="num2" name="num2" /><br /><br />
+      <input type="button" value="Add" onclick="addNumber()" />
+      <br /><br />
+      <input type="button" value="Subtract" onclick="subNumber()" />
+      <br /><br />
+      <input type="button" value="Division" onclick="divNumber()" />
+      <h3 id="test"></h3>
+    </form>
+  </body>
+</html>

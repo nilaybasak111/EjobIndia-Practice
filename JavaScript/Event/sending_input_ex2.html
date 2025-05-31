@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <script>
+      function displayMessage(){
+        let name = document.registrationForm.name.value;
+        let location = document.registrationForm.location.value;
+        let age = document.registrationForm.age.value;
+        //window.alert(`Name: ${name}\nLocation: ${location}\nAge: ${age}`);
+        document.getElementById("test").innerHTML = `Name: ${name}<br>Location: ${location}<br>Age: ${age}`;
+      }
+    </script>
+    <h3>Registration Form</h3>
+    <form name="registrationForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="text">Location:</label><br>
+        <input type="text" id="location" name="location"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+        <input type="button" value="Submit" onclick="displayMessage()">
+        <br>
+        <h3 id="test"></h3>
+    </form>
+  </body>
+</html>
