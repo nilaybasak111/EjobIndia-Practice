@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <script>
+      // This function finds the square of a number and displays the result
+      function squareNumber() {
+        let num = document.test.num.value;
+        let square = parseFloat(num) * parseFloat(num);
+        document.getElementById(
+          "test"
+        ).innerHTML = `The Square of ${num} is ${square}`;
+      }
+      // This function finds the cube of a number and displays the result
+      function cubeNumber() {
+        let num = document.test.num.value;
+        let cube = parseFloat(num) * parseFloat(num) * parseFloat(num);
+        document.getElementById(
+          "test"
+        ).innerHTML = `The Cube of ${num} is ${cube}`;
+      }
+
+      function displayResult() {
+        let result = document.test.res.value;
+        if (result == "square") {
+          squareNumber();
+        } else if (result == "cube") {
+          cubeNumber();
+        }
+      }
+    </script>
+    <h3>Number Calculator</h3>
+    <form name="test">
+      <label for="num">Enter Number:</label><br />
+      <input type="number" name="num" /><br /><br />
+      <label for="res">Select:</label><br />
+      <input type="radio" name="res" value="square" />Square
+      <input type="radio" name="res" value="cube" />Cube
+      <br />
+      <br />
+      <button type="button" onclick="displayResult()">Result</button>
+      <h3 id="test"></h3>
+    </form>
+  </body>
+</html>

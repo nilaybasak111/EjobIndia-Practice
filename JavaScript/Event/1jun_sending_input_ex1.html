@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <script>
+      // This function adds two numbers and displays the result
+      function addNumber() {
+        let num1 = document.numOpp.num1.value;
+        let num2 = document.numOpp.num2.value;
+        let sum = parseFloat(num1) + parseFloat(num2);
+        document.getElementById(
+          "test"
+        ).innerHTML = `The Sum of ${num1} and ${num2} is ${sum}`;
+      }
+    </script>
+    <h3>Show Details</h3>
+    <form name="test">
+      <label for="email">Email:</label><br />
+      <input type="email" name="em" /><br /><br />
+      <label for="gen">Gender:</label><br />
+      <input type="radio" name="gen" value="male" />M
+      <input type="radio" name="gen" value="female" />F
+      <br /> <br />
+      <label for="city">Select City:</label><br />
+      <select name="loc">
+        <option value="">Select City</option>
+        <option value="dhaka">Dhaka</option>
+        <option value="rajshahi">Rajshahi</option>
+        <option value="chittagong">Chittagong</option>
+      </select>
+        <br /><br />
+      <input type="button" value="Show" onclick="addNumber()" />
+      <h3 id="test"></h3>
+    </form>
+  </body>
+</html>
