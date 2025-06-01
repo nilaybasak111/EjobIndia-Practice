@@ -1,14 +1,16 @@
 <html>
   <body>
     <script>
-      // This function adds two numbers and displays the result
-      function addNumber() {
-        let num1 = document.numOpp.num1.value;
-        let num2 = document.numOpp.num2.value;
-        let sum = parseFloat(num1) + parseFloat(num2);
-        document.getElementById(
-          "test"
-        ).innerHTML = `The Sum of ${num1} and ${num2} is ${sum}`;
+      function register() {
+        let em = document.test.em.value;
+        let g = document.test.gen.value;
+        let l = document.test.loc.value;
+        let r = `<ol>
+                  <li>Email: ${em}</li>
+                  <li>Gender: ${g}</li>
+                  <li>City: ${l}</li>
+                </ol>`;
+        document.getElementById("result").innerHTML = r;
       }
     </script>
     <h3>Show Details</h3>
@@ -17,18 +19,18 @@
       <input type="email" name="em" /><br /><br />
       <label for="gen">Gender:</label><br />
       <input type="radio" name="gen" value="male" />M
-      <input type="radio" name="gen" value="female" />F
-      <br /> <br />
+      <input type="radio" name="gen" value="female" />F <br />
+      <br />
       <label for="city">Select City:</label><br />
       <select name="loc">
         <option value="">Select City</option>
-        <option value="dhaka">Dhaka</option>
-        <option value="rajshahi">Rajshahi</option>
-        <option value="chittagong">Chittagong</option>
+        <option value="kol">Kolkata</option>
+        <option value="nab">Nabadwip</option>
+        <option value="pune">Pune</option>
       </select>
-        <br /><br />
-      <input type="button" value="Show" onclick="addNumber()" />
-      <h3 id="test"></h3>
+      <br /><br />
+      <input type="button" value="Show" onclick="register()" />
+      <h3 id="result"></h3>
     </form>
   </body>
 </html>

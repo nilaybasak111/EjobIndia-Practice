@@ -1,9 +1,31 @@
 <html>
   <body>
     <script>
-      function totalAmount() {}
+      function totalAmount() {
+        let item1 = document.invoiceForm.itemName1.value;
+        let price1 = document.invoiceForm.price1.value;
+        let qty1 = document.invoiceForm.qty1.value;
+        let total1 = price1 * qty1;
+        document.getElementById("itemName1").innerHTML = item1;
+        document.getElementById("totalprice1").innerHTML = total1;
+        let item2 = document.invoiceForm.itemName2.value;
+        let price2 = document.invoiceForm.price2.value;
+        let qty2 = document.invoiceForm.qty2.value;
+        let total2 = price2 * qty2;
+        document.getElementById("itemName2").innerHTML = item2;
+        document.getElementById("totalprice2").innerHTML = total2;
+        let item3 = document.invoiceForm.itemName3.value;
+        let price3 = document.invoiceForm.price3.value;
+        let qty3 = document.invoiceForm.qty3.value;
+        let total3 = price3 * qty3;
+        document.getElementById("itemName3").innerHTML = item3;
+        document.getElementById("totalprice3").innerHTML = total3;
+        let totalAmount =
+          parseFloat(total1) + parseFloat(total2) + parseFloat(total3);
+        document.getElementById("totalAmount").innerHTML = totalAmount;
+      }
     </script>
-    <form>
+    <form name="invoiceForm">
       <h3>Invoice Generator</h3>
       <table cellpadding="10" cellspacing="0">
         <tr>
@@ -11,7 +33,7 @@
           <td>
             <input
               type="text"
-              name="itemName"
+              name="itemName1"
               placeholder="Enter Item Name"
               required
             />
@@ -20,14 +42,14 @@
           <td>
             <input
               type="number"
-              name="price"
+              name="price1"
               placeholder="Enter Item Price"
               required
             />
           </td>
           <td><label>Quantity:</label></td>
           <td>
-            <select name="qty" required>
+            <select name="qty1" required>
               <option value="">Select Quantity</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -42,7 +64,7 @@
           <td>
             <input
               type="text"
-              name="itemName"
+              name="itemName2"
               placeholder="Enter Item Name"
               required
             />
@@ -51,14 +73,14 @@
           <td>
             <input
               type="number"
-              name="price"
+              name="price2"
               placeholder="Enter Item Price"
               required
             />
           </td>
           <td><label>Quantity:</label></td>
           <td>
-            <select name="qty" required>
+            <select name="qty2" required>
               <option value="">Select Quantity</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -73,7 +95,7 @@
           <td>
             <input
               type="text"
-              name="itemName"
+              name="itemName3"
               placeholder="Enter Item Name"
               required
             />
@@ -82,14 +104,14 @@
           <td>
             <input
               type="number"
-              name="price"
+              name="price3"
               placeholder="Enter Item Price"
               required
             />
           </td>
           <td><label>Quantity:</label></td>
           <td>
-            <select name="qty" required>
+            <select name="qty3" required>
               <option value="">Select Quantity</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -106,10 +128,32 @@
         value="Total Billing Amount"
         onclick="totalAmount()"
       />
-      <h2>Invoice :</h2>
-      <h4>
-        <table></table>
-      </h4>
     </form>
+    <h2>Invoice :</h2>
+    <h3>
+      <table cellpadding="10" cellspacing="0">
+        <tr>
+          <th>Item Name</th>
+          <th>Total Price</th>
+        </tr>
+        <tr>
+          <td id="itemName1"></td>
+          <td id="totalprice1"></td>
+        </tr>
+        <tr>
+          <td id="itemName2"></td>
+          <td id="totalprice2"></td>
+        </tr>
+        <tr>
+          <td id="itemName3"></td>
+          <td id="totalprice3"></td>
+        </tr>
+      </table>
+    </h3>
+    <br /><br />
+    <h3>
+      Grand Total:
+      <span id="totalAmount"></span>
+    </h3>
   </body>
 </html>
