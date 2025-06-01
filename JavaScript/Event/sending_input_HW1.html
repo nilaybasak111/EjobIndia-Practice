@@ -15,20 +15,30 @@
       function subNumber() {
         let num1 = document.numOpp.num1.value;
         let num2 = document.numOpp.num2.value;
-        let sum = parseFloat(num1) - parseFloat(num2);
+        let sub = parseFloat(num1) - parseFloat(num2);
         document.getElementById(
           "test"
-        ).innerHTML = `The Subtraction of ${num1} and ${num2} is ${sum}`;
+        ).innerHTML = `The Subtraction of ${num1} and ${num2} is ${sub}`;
       }
 
       // This function divide two numbers and displays the result
       function divNumber() {
         let num1 = document.numOpp.num1.value;
         let num2 = document.numOpp.num2.value;
-        let sum = parseFloat(num1) / parseFloat(num2);
+        let div = parseFloat(num1) / parseFloat(num2);
         document.getElementById(
           "test"
-        ).innerHTML = `The Division of ${num1} and ${num2} is ${sum}`;
+        ).innerHTML = `The Division of ${num1} and ${num2} is ${div}`;
+      }
+
+      // This function Multiply two numbers and displays the result
+      function mulNumber() {
+        let num1 = document.numOpp.num1.value;
+        let num2 = document.numOpp.num2.value;
+        let mul = parseFloat(num1) * parseFloat(num2);
+        document.getElementById(
+          "test"
+        ).innerHTML = `The Division of ${num1} and ${num2} is ${mul}`;
       }
     </script>
     <h3>Two Number Operation</h3>
@@ -42,6 +52,8 @@
       <input type="button" value="Subtract" onclick="subNumber()" />
       <br /><br />
       <input type="button" value="Division" onclick="divNumber()" />
+      <br /><br />
+      <input type="button" value="Multiplication" onclick="mulNumber()" />
       <h3 id="test"></h3>
     </form>
   </body>
