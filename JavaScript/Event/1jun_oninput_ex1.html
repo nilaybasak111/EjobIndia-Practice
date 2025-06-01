@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <script>
+      // On input event example
+      function calc() {
+        let l = document.getElementById("len").value;
+        let b = document.getElementById("bred").value;
+        let h = document.getElementById("height").value;
+        document.getElementById("ar").innerHTML = `Area : ${l * b}`;
+        document.getElementById("vol").innerHTML = `Volume : ${l * b * h}`;
+      }
+    </script>
+    Enter Length:
+    <input type="number" id="len" oninput="calc()" /><br />
+    Enter Breadth:
+    <input type="number" id="bred" oninput="calc()" /><br />
+    <h3 id="ar"></h3>
+    <br />
+    Enter Height:
+    <input type="number" id="height" oninput="calc()" /><br />
+    <h3 id="vol"></h3>
+  </body>
+</html>
