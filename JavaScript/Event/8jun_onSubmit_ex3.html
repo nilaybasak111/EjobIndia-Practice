@@ -1,0 +1,105 @@
+<html>
+  <body>
+    <script>
+      function onSubmit() {
+        let name = document.test.name.value;
+        let age = document.test.age.value;
+        let password = document.test.password.value;
+        let confirmPassword = document.test.confirmPassword.value;
+        let gender = document.test.gen.value;
+        let location = document.test.location.value;
+        if (name.length < 6) {
+          alert("Name must be at least 6 characters long.");
+          return false;
+        } else if (age < 15 || age > 25) {
+          alert("Age must be between 15 and 25.");
+          return false;
+        } else if (password.length != 8) {
+          alert("Password must be 8 characters long.");
+          return false;
+        } else if (password !== confirmPassword) {
+          alert("Passwords do not match.");
+          return false;
+        } else if (gender == null || gender === "") {
+          alert("Please Select Gender.");
+          return false;
+        } else if (location == null || location === "") {
+          alert("Please Select Location.");
+          return false;
+        } else {
+          alert(
+            `Form Submitted Successfully \nName: ${name}, Age: ${age}, Gender: ${gender}, Location: ${location}`
+          );
+          return true; // Form will be submitted
+        }
+      }
+    </script>
+
+    <form onsubmit="return onSubmit()" name="test">
+      <h3>Form onSubmit Example</h3>
+      <table cellpadding="10" cellspacing="0">
+        <tr>
+          <td><label>Enter Name:</label></td>
+          <td>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Enter Age:</label></td>
+          <td><input type="text" name="age" placeholder="Enter Your Age" /></td>
+        </tr>
+        <tr>
+          <td><label>Enter Password:</label></td>
+          <td>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Your Password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Confirm Password:</label></td>
+          <td>
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm Your Password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Select Gender:</label></td>
+          <td>
+            <input type="radio" name="gen" value="Male" />M
+            <input type="radio" name="gen" value="Female" />F
+          </td>
+        </tr>
+        <tr>
+          <td><label>Select Location:</label></td>
+          <td>
+            <select name="location" required>
+              <option value="">Select City</option>
+              <option value="Kolkata">kol</option>
+              <option value="Howrah">hwh</option>
+              <option value="Sealdah">sdlh</option>
+              <option value="Patna">patna</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" name="Register" value="Register" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

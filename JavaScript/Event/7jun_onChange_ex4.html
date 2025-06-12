@@ -1,0 +1,46 @@
+<html>
+  <body>
+    <script>
+      function calTable() {
+        // This function calculates the multiplication table based on the selected number
+        // and displays it in the HTML element with id "tab".
+        var selnum = document.form1.selNum.value;
+        var tab = document.getElementById("tab");
+        tab.innerHTML = "";
+        if (selnum === "") {
+          tab.innerHTML = "Please select a number.";
+          console.log("Please select a number.");
+          return;
+        } else {
+          tab.innerHTML = `Table of ${selnum} is:<br>`;
+          for (let i=1; i<=10; i++){
+            tab.innerHTML = tab.innerHTML + `${selnum} x ${i} = ${selnum * i}<br>`;
+          }
+        }
+      }
+    </script>
+    <form name="form1">
+      <table cellpadding="10" cellspacing="0">
+        <tr>
+          <td>
+            <label>Select Number:</label>
+          </td>
+          <td>
+            <select name="selNum" onchange="calTable()" required>
+              <option value="">Select Number</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <br />
+    <h2>Here is Your Table:</h2>
+    <h3 id="tab"></h3>
+  </body>
+</html>

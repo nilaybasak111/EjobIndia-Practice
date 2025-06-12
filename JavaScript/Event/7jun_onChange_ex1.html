@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script>
+      function calculate() {
+        let num = document.test.num.value;
+        let choice = document.test.ch.value;
+        if (choice == "square") {
+          document.test.r.value = Math.pow(num, 2);
+        } else {
+          document.test.r.value = Math.pow(num, 3);
+        }
+      }
+    </script>
+    <form name="test">
+      Enter Number :
+      <input type="number" id="num" placeholder="Enter Your Number" required />
+      <br />
+      <br />
+      Select Choice :
+      <input type="radio" name="ch" value="square" onchange="calculate()" />x*x
+      <input type="radio" name="ch" value="cube" onchange="calculate()" />x*x*x
+      <br /><br />
+      Result :
+      <input type="text" name="r" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <script>
+      var z = 0;
+      function over() {
+        document.getElementById(
+          "sp1"
+        ).innerHTML = `MouseOver Event Count: ${++z}`;
+      }
+    </script>
+    <h3>Mouse Over Events</h3>
+    <div
+      style="
+        background-color: yellow;
+        width: 40%;
+        border: 2px solid red;
+        height: 30%;
+      "
+      onmouseover="over()"
+    >
+      <p style="color: red">
+        A paragraph is a group of related sentences that develop a single main
+        idea or topic.
+        <span style="color: green"
+          >It's a building block of writing, helping to organize and structure
+          text,</span
+        >
+        <strong style="color: blue">
+          making it easier for the reader to follow</strong
+        >
+        the author's thoughts according to various sources
+      </p>
+    </div>
+    <br />
+    <span id="sp1" style="color: red"></span><br />
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+  <!-- onkeyup, onkeydown, onkeypress events example -->
+  <body>
+    <script>
+      function keyUp() {
+        let c = document.getElementById("t1").value;
+        document.getElementById("head3").innerHTML = "You typed: " + c;
+      }
+
+      function keyDown() {
+        document.getElementById("head3").innerText = "You are typing...";
+      }
+
+      var count = 0;
+      function keyPress() {
+        count++;
+        document.getElementById(
+          "sp1"
+        ).innerHTML = `onkeypress event called ${count} times`;
+      }
+    </script>
+    Enter Something:
+    <input type="text" id="t1" onkeyup="keyUp()" onkeydown="keyDown()" />
+    <br />
+    <br />
+    <h3 id="head3"></h3>
+    <br />
+    <br />
+    Type Anything:
+    <input type="text" id="t2" onkeypress="keyPress()" />
+    <br />
+    <br />
+    <span id="sp1" style="color: green"></span>
+  </body>
+</html>

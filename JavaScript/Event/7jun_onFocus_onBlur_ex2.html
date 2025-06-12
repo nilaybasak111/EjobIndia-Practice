@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <script>
+      function f1() {
+        document.getElementById("sp1").innerHTML = "Please enter your name";
+      }
+      function b1() {
+        document.getElementById("sp1").innerHTML =
+          "Thank you for entering your name";
+      }
+      function f2() {
+        document.getElementById("sp2").innerHTML = "Please select a date";
+      }
+      function b2() {
+        document.getElementById("sp2").innerHTML =
+          "Thank you for selecting a date";
+      }
+    </script>
+    <form>
+      <input
+        type="text"
+        onfocus="f1()"
+        onblur="b1()"
+        placeholder="Focus and Blur Event 1"
+      />
+      <span id="sp1" style="color: green"></span>
+      <br /><br />
+      <input
+        type="date"
+        onfocus="f2()"
+        onblur="b2()"
+        placeholder="Focus and Blur Event 2"
+      />
+      <span id="sp2" style="color: green"></span>
+    </form>
+  </body>
+</html>

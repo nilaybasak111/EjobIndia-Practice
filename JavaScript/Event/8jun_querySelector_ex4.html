@@ -1,0 +1,41 @@
+<html>
+  <body>
+    <script>
+      function checkQuerySelector() {
+        let name = document.querySelector("#name").value;
+        alert(`Welcome, ${name}!`);
+        document.querySelector(".test").innerHTML = `Welcome, ${name}!`;
+        document.querySelector(
+          "p"
+        ).innerHTML = `Hello, ${name}! This is a Paragraph using querySelector.`;
+      }
+
+      function checkQuerySelectorAll() {
+        let names = document.querySelectorAll("#name, .test, p");
+        console.log(names);
+        alert(names[0].value);
+        names[1].innerHTML = `Welcome, ${names[0].value}!`;
+        names[2].innerHTML = `Hello, ${names[0].value}! This is a Paragraph using querySelectorAll.`;
+      }
+    </script>
+    Enter Name:
+    <input type="text" id="name" placeholder="Enter Your Name" required />
+    <br />
+    <h3 class="test">Welcome to JavaScript</h3>
+    <br />
+    <p>This is the Testing Paragraph</p>
+    <br />
+    <input
+      type="button"
+      value="Check Query Selector"
+      onclick="checkQuerySelector()"
+    />
+    <br />
+    <br />
+    <input
+      type="button"
+      value="Check Query Selector All"
+      onclick="checkQuerySelectorAll()"
+    />
+  </body>
+</html>
