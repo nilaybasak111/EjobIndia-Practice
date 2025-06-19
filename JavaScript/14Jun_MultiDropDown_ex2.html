@@ -1,0 +1,41 @@
+<html>
+  <body>
+    <script>
+      function displaySelectedRoles() {
+        event.preventDefault(); // Prevent Reload After Form Submission
+        let arr = document.test.jobRoles.options;
+        let count = 0;
+        let result = "";
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i].selected == true) {
+            count++;
+            result += arr[i].value + " ";
+          }
+        }
+        if (count == 0) {
+          document.getElementById("selected").innerHTML =
+            "No job role selected.";
+          return false;
+        } else {
+          document.getElementById("selected").innerHTML = result;
+          return true;
+        }
+      }
+    </script>
+    <form name="test" onsubmit="return displaySelectedRoles()">
+      Select Job Roles:<br /><br />
+      <select name="jobRoles" multiple>
+        <option value="Developer">Developer</option>
+        <option value="Designer">Designer</option>
+        <option value="Manager">Manager</option>
+        <option value="Tester">Tester</option>
+        <option value="Analyst">Analyst</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Check Selected Roles" />
+    </form>
+    <br />
+    <h2>Selected Roles:</h2>
+    <h3 id="selected"></h3>
+  </body>
+</html>

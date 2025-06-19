@@ -1,0 +1,23 @@
+<html>
+  <!-- Calling / Executing Button Click Without An Event -->
+  <body>
+    <!-- If You Add An Event Listener, Try To Place The Body Code Above The Script -->
+    <input type="button" id="btn" value="Click Me" />
+    <br />
+    <br />
+    <h3 id="head3"></h3>
+    <script>
+      var bt = document.getElementById("btn");
+      //console.log("Entering Script");
+      bt.addEventListener("click", () => {
+        alert("Button Clicked");
+      });
+      bt.addEventListener("mouseenter", () => {
+        document.getElementById("head3").innerHTML = "Mouse Entered";
+      });
+      bt.addEventListener("mouseleave", () => {
+        document.getElementById("head3").innerHTML = "Mouse Out";
+      });
+    </script>
+  </body>
+</html>

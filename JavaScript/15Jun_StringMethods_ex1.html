@@ -1,0 +1,102 @@
+<html>
+  <body>
+    <script>
+      var str1 = "This is a string. We are going to split it";
+      document.writeln("length :" + str1.length + "<br>");
+      document.writeln(str1[0] + "<br>");
+      // Slice () method is used to extract a section of a string and return it as a new string.
+      // It takes two parameters: the start position and the end position.
+      document.writeln("Slice : " + str1.slice(0, 13) + "<br>");
+      // If you give only start position, it will return the string from the start position to the end of the string.
+      document.writeln("Slice : " + str1.slice(20) + "<br>");
+      // SubString () method is used to extract a section of a string and return it as a new string.
+      // It takes two parameters: the start position of string and the end position is (End Position+1).
+      document.writeln("SubString : " + str1.substring(10, 23) + "<br>");
+      // SubStr () method is used to extract a section of a string and return it as a new string.
+      // It takes two parameters: the start position of string and the number of characters to extract.
+      document.writeln("SubStr : " + str1.substr(0, 17) + "<br>");
+      document.writeln("SubStr : " + str1.substr(20) + "<br>");
+
+      var str2 = "React is a Good Language. React is Easy. React is Fun.";
+      document.writeln(
+        "Good Language indexOf : " + str2.indexOf("Good Language") + "<br>"
+      );
+      document.writeln("Python indexOf : " + str2.indexOf("Python") + "<br>");
+      // Finding the first occurrence of a specified value(React).
+      document.writeln("React indexOf : " + str2.indexOf("React") + "<br>");
+      // Finding the last occurrence of a specified value(React).
+      document.writeln(
+        "React LastIndexOf : " + str2.lastIndexOf("React") + "<br>"
+      );
+      // Finding the middle occurrence of a specified value(React).
+      document.writeln(
+        "React Middle Occurrence : " + str2.indexOf("React", 1) + "<br>"
+      );
+      // Replaceing the specified value(Good Language) with the new value(Framework).
+      document.writeln(
+        "Replace : " + str2.replace("Good Language", "Framework") + "<br>"
+      );
+      // Replacing all occurrences of a specified value(React) with the new value(Node JS).
+      document.writeln(
+        "Replace All Occurrences Of A Specified Value : " +
+          str2.replaceAll("React", "Node JS") +
+          "<br>"
+      );
+
+      // Merging Multiple Strings
+      var s11 = "Hi, ";
+      var s12 = "How are you? ";
+      var s13 = "I am good.";
+      document.writeln(
+        "Merging Multiple Strings : " + s11.concat(s12, s13) + "<br>"
+      );
+
+      // Trimming A String
+      var s14 = "    Welcome to Nabadwip    ";
+      document.writeln(
+        "Before Trimming Length Of A String : " + s14.length + "<br>"
+      );
+      document.writeln(
+        "After Trimming Length Of A String : " + s14.trim().length + "<br>"
+      );
+      // Trimming A String From Left Side
+      document.writeln(
+        "Trimming A String From Left Side : " + s14.trimLeft().length + "<br>"
+      );
+      // Trimming A String From Right Side
+      document.writeln(
+        "Trimming A String From Right Side : " + s14.trimRight().length + "<br>"
+      );
+
+      //Repeating A String
+      document.writeln("Repeating A String : " + s11.repeat(4) + "<br>");
+
+      // Converting A String To Lower Case
+      document.writeln(
+        "Converting A String To Lower Case : " + "THANKS".toLowerCase() + "<br>"
+      );
+
+      // Converting A String To Upper Case
+      document.writeln(
+        "Converting A String To Upper Case : " + "hello".toUpperCase() + "<br>"
+      );
+
+      // startsWith() & endsWith() Methods. These methods are returns true or false
+      var s15 = "hi this is a react class for today";
+      document.writeln(
+        "startsWith() Method : " + s15.startsWith("Hi this") + "<br>"
+      );
+      document.writeln(
+        "endsWith() Method : " + s15.endsWith("for today") + "<br>"
+      );
+
+      // Splitting A String
+      document.writeln(
+        "Splitting A String By Space : " + s15.split(" ") + "<br>"
+      );
+      document.writeln(
+        "Splitting A String By is : " + s15.split(" is ") + "<br>"
+      );
+    </script>
+  </body>
+</html>

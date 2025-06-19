@@ -1,0 +1,40 @@
+<html>
+  <!-- Find The Total Word & Vowel Count In The Sentence -->
+  <body>
+    Enter Statement :
+    <input type="text" id="statement" />
+    <br />
+    <br />
+    <input type="button" id="count" value="COUNT" />
+    <br />
+    <br />
+    <h3 id="wCount"></h3>
+    <br />
+    <h3 id="vCount"></h3>
+  </body>
+  <script>
+    var countButton = document.getElementById("count");
+    countButton.addEventListener("click", () => {
+      var statement = document.getElementById("statement").value;
+      var st1 = statement.toLowerCase();
+      var wordsLength = st1.split(" ").length;
+      let count = 0;
+      for (let i = 0; i < st1.length; i++) {
+        if (
+          st1[i] === "a" ||
+          st1[i] === "e" ||
+          st1[i] === "i" ||
+          st1[i] === "o" ||
+          st1[i] === "u"
+        ) {
+          count++;
+        }
+      }
+      document.getElementById("wCount").innerHTML =
+        "Total Word Count : " + wordsLength;
+      document.getElementById(
+        "vCount"
+      ).innerHTML = `Total Vowel Count : ${count}`;
+    });
+  </script>
+</html>

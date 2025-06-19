@@ -1,0 +1,23 @@
+<html>
+  <!-- Arrow Function Implementation -->
+  <body>
+    <script>
+      var calc = () => {
+        let x = document.querySelector("#n1").value;
+        let f = 1;
+        for (let i = 1; i <= x; i++) {
+          f = f * i;
+        }
+        document.getElementById("sp1").innerHTML = `Factorial of ${x} is ${f}`;
+      };
+    </script>
+    Enter A Number :
+    <input type="number" id="n1" />
+    <br />
+    <br />
+    <button onclick="calc()">Show</button>
+    <br />
+    <br />
+    <span id="sp1"></span>
+  </body>
+</html>
