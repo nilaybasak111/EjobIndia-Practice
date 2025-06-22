@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <div id="d1"></div>
+        <script>
+            var arr = ["kolkata", "mumbai", "delhi", "chennai", "bangalore"];
+            var res = "<ol>";
+                arr.forEach((value,index)=>{
+                    res = res + `<li>${value}</li>`;
+                })
+                res = res + "</ol>";
+                console.log(res);
+                document.getElementById("d1").innerHTML = res;
+        </script>
+    </body>
+</html>

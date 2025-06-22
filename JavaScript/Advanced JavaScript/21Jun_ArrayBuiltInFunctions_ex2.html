@@ -1,0 +1,104 @@
+<html>
+  <body>
+    <script>
+      var arr1 = [10, 20, 30, "hello", "welcome", true];
+      document.writeln("Length of the array: " + arr1.length + "<br>");
+
+      // toString() method converts an array to a string
+      var st = arr1.toString();
+      document.writeln(
+        "toString : " + st + "<br>" + "toString Length : " + st.length + "<br>"
+      );
+
+      // join() method joins all elements of an array into a string
+      var st1 = arr1.join(" "); // Joins all elements with a space
+      document.writeln(
+        "join : " + st1 + "<br>" + "join Length : " + st1.length + "<br>"
+      );
+      var st2 = arr1.join("@"); // Joins all elements with an @ symbol
+      document.writeln(
+        "join : " + st2 + "<br>" + "join Length : " + st2.length + "<br>"
+      );
+
+      // slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end
+      document.writeln("slice : " + arr1.slice(2, 4) + "<br>");
+
+      // push() method adds one or more elements to the end of an array and returns the new length of the array
+      arr1.push("kolkata", "delhi", 200);
+      document.writeln("push : " + arr1 + "<br>");
+
+      // pop() method removes the last element from an array and returns that element
+      document.writeln(arr1.pop() + "<br>"); // removes last element
+      document.writeln("pop : " + arr1 + "<br>");
+
+      var arr2 = [10, "hi", 20, "hello", "hi", 30, "hi"];
+
+      // indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+      document.writeln("indexOf : " + arr2.indexOf("hello") + "<br>");
+      document.writeln("indexOf : " + arr2.indexOf("java") + "<br>");
+      document.writeln("indexOf : " + arr2.indexOf("hi") + "<br>");
+
+      // lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present.
+      document.writeln("lastIndexOf : " + arr2.lastIndexOf("hi") + "<br>");
+      document.writeln("lastIndexOf : " + arr2.indexOf("hi", 2) + "<br>");
+
+      // includes() method determines whether an array includes a certain element, returning true or false as a result.
+      document.writeln("includes : " + arr2.includes("hello") + "<br>");
+      document.writeln("includes : " + arr2.includes("java") + "<br>");
+
+      let l = arr2.length;
+
+      // shift() method in JavaScript removes the first element from an array and returns it, changing the original array's length. And the last element changes to undefined.
+      document.writeln("shift : " + arr2.shift() + "<br>"); // removes first element
+      document.writeln(
+        "shift : " +
+          arr2 +
+          "<br>" +
+          "After shift last element of Array : " +
+          arr2[l - 1] +
+          "<br>"
+      );
+
+      // unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+      arr2.unshift("unshift : " + "kolkata");
+      document.writeln(
+        "unshift : " +
+          arr2 +
+          "<br>" +
+          "After unshift last element of Array : " +
+          arr2[l - 1] +
+          "<br>"
+      );
+
+      var a11 = ["kolkata", "delhi", "mumbai"];
+      var a12 = [10, 20];
+      var a13 = ["hi", "hello"];
+
+      // concat() method in JavaScript joins two or more strings or arrays together and returns a new combined string or array, without changing the originals
+      var result = a11.concat(a12, a13);
+      document.writeln("concat : " + result + "<br>");
+
+      // reverse() method reverses the order of the elements in an array. This method does not change the original array.
+      document.writeln("reverse : " + arr2.reverse() + "<br>");
+
+      var arr3 = [10, 20, 30, "hi", "hello", "welcome", 45.89, 90];
+      // splice() method in JavaScript changes an array by adding, removing, or replacing elements at a specific position and returns the removed elements
+      //usecase1
+      // First one is index, Second one is how many elements to remove, and the rest are elements to add
+      document.writeln(
+        "splice : " + arr3.splice(3, 2, "i", "we", "go", "to") + "<br>"
+      );
+      document.writeln("Array After splice : " + arr3 + "<br>");
+      //usecase2
+      // First one is index, Second one is how many elements to remove
+      document.writeln("splice : " + arr3.splice(8, 1) + "<br>");
+      document.writeln("Array After splice : " + arr3 + "<br>");
+      //usecase3
+      // First one is index, Second one is how many elements to remove, and the rest are elements to add
+      document.writeln(
+        "splice : " + arr3.splice(3, 0, "howrah", "digha") + "<br>"
+      );
+      document.writeln("Array After splice : " + arr3 + "<br>");
+    </script>
+  </body>
+</html>

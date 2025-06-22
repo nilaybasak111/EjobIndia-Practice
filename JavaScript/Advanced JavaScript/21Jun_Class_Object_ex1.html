@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <script>
+      class Dimension {
+        constructor(l, b, h) {
+          console.log("constructor called");
+          this.len = l;
+          this.brd = b;
+          this.hgt = h;
+        }
+
+        area = () => {
+          return this.len * this.brd;
+        };
+
+        display = () => {
+          console.log(
+            `length: ${this.len}, breadth: ${this.brd}, height: ${this.hgt}`
+          );
+        };
+
+        volume = () => {
+          return this.len * this.brd * this.hgt;
+        };
+      }
+
+      // Class Object Create
+      var obj1 = new Dimension(10, 20, 30);
+      obj1.display("Hello World");
+      document.writeln(`<h3>Area: ${obj1.area()}<br></h3>`);
+      document.writeln(`<h3>Volume: ${obj1.volume()}<br></h3>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="d1"></div>
+    <script>
+      var arr = ["apple", "banana", "cherry", "date"];
+      var res = "<ol>";
+      var temp = arr.map((value, index) => {
+        return `<li>${value}</li>`;
+      });
+      console.log(temp);
+      res = res + temp.join("") + "</ol>";
+      document.getElementById("d1").innerHTML = res;
+    </script>
+  </body>
+</html>

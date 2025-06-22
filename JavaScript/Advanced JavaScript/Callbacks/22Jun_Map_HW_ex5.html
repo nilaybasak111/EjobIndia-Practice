@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <table border="2" cellpadding="20" id="tab1"></table>
+    </div>
+    <script>
+      var arr = [
+        "kolkata",
+        "delhi",
+        "mumbai",
+        "chennai",
+        "hyderabad",
+        "bangalore",
+        "pune",
+      ];
+      
+      var tab1 = arr.map((cityName, cityId) => {
+        return `<tr><td>${cityId + 1}</td><td>${cityName}</td></tr>`;
+      });
+      var tab2 = tab1.join("");
+      document.getElementById("tab1").innerHTML = tab2;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <script>
+      var arr = [10, 12, 15, 17, 66, 34, 55];
+      // filter() method in JavaScript creates a new array containing only the elements that pass a specific condition.
+      var result = arr.filter((value, index) => {
+        if (value % 2 == 0) {
+          return true;
+        }
+      });
+      document.writeln(`Using Filter : ${result}<br>`);
+
+      // find() method in JavaScript returns the first element in an array that satisfies a given condition
+      var result2 = arr.find((value, index) => {
+        if (value % 2 == 0) {
+          return true;
+        }
+      });
+      document.writeln(`Using Find : ${result2}<br>`);
+
+      // findIndex() method in JavaScript returns the index of the first element in an array that satisfies a given condition or test; if none is found, it returns -1
+      var result3 = arr.findIndex((value, index) => {
+        if (value % 2 == 0) {
+          return true;
+        }
+      });
+      document.writeln(`Using FindIndex : ${result3}<br>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <script>
+      var names = ["Ram", "Shyam", "Gopal", "Ravi", "Mohan"];
+
+      // every() method in JavaScript checks if all elements in an array pass a given test, and returns true if they do, or false if any do not.
+      var result1 = names.every((value, index) => {
+        if (value.length >= 4) {
+          return true;
+        }
+      });
+      document.write("Using every() : " + result1 + "<br>");
+
+      // some() method in JavaScript checks if any element in an array passes a given test, and returns true if any do, or false if none do.
+      var result2 = names.some((value, index) => {
+        if (value.length >= 4) {
+          return true;
+        }
+      });
+      document.write("Using some() : " + result2 + "<br>");
+    </script>
+  </body>
+</html>

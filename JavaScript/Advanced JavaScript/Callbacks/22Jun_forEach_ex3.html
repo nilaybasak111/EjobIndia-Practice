@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <script>
+      var arr2 = [30, 50, 2, 40, 7, 8];
+      var sum = 0;
+      arr2.forEach((val, index) => {
+        if (index % 2 == 0) {
+          sum = sum + val;
+        }
+      });
+      document.writeln(`Sum of even indexed values: ${sum}`);
+    </script>
+  </body>
+</html>
