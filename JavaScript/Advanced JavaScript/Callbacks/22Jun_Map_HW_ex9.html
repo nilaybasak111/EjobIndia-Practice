@@ -1,0 +1,43 @@
+<html>
+  <!-- 
+        arr1 = [10,20,45,89,100]
+        arr2 = [35,20,45,200]
+        Union of arr1 and arr2 using Only map()
+  -->
+  <body>
+    Enter First Array :
+    <input type="text" id="arr1" />
+    <br />
+    <br />
+    Enter Second Array :
+    <input type="text" id="arr2" />
+    <br />
+    <br />
+    <input type="button" id="unionBtn" value="Get Union" />
+    <br />
+    <br />
+    <h3 id="union"></h3>
+    <script>
+      var unionBtn = document.getElementById("unionBtn");
+      unionBtn.addEventListener("click", () => {
+        var arr1 = document.getElementById("arr1").value.split(",");
+        var arr2 = document.getElementById("arr2").value.split(",");
+        var arr3 = [];
+        console.log(arr1, arr2);
+        var union = arr1.map((value, index) => {
+          if (arr2.includes(value)) {
+            return arr3.push(value);
+          }
+        });
+        console.log(arr3);
+        if (arr3.length == 0) {
+          return `${(document.getElementById("union").innerHTML =
+            "No Common Elements Found")}`;
+        }
+        document.getElementById(
+          "union"
+        ).innerHTML = `Union of First and Second Array is : ${arr3} `;
+      });
+    </script>
+  </body>
+</html>

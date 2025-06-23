@@ -1,0 +1,41 @@
+<html>
+  <!-- Max & Min Word With Length -->
+  <body>
+    Enter A Sentence :
+    <input type="text" id="sentence" />
+    <br />
+    <input type="button" id="count" value="Count" />
+    <br />
+    <br />
+    <h3 id="maxLen"></h3>
+    <br />
+    <br />
+    <h3 id="minLen"></h3>
+    <script>
+      var countButton = document.getElementById("count");
+      countButton.addEventListener("click", () => {
+        var sentence = document.getElementById("sentence");
+        var words = sentence.value.split(" ");
+        //console.log(words);
+
+        var maxWord = words[0];
+        var minWord = words[0];
+
+        var maxLen = words.map((value, index) => {
+          //console.log("inside map");
+          if (value.length > maxWord.length) {
+            maxWord = value;
+          }
+          if (value.length < minWord.length) {
+            minWord = value;
+          }
+          //console.log("after map");
+        });
+        document.getElementById("maxLen").innerHTML =
+          "Maximum Length Word: " + maxWord + " (" + maxWord.length + ")";
+        document.getElementById("minLen").innerHTML =
+          "Minimum Length Word: " + minWord + " (" + minWord.length + ")";
+      });
+    </script>
+  </body>
+</html>
