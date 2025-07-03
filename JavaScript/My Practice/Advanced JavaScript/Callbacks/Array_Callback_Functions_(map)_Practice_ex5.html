@@ -1,0 +1,19 @@
+<html>
+  <!--
+      You have an array of numbers: [1, 2, 3, 4, 5]. 
+      Using the map method, create a new array where each number is doubled. 
+      The result should be [2, 4, 6, 8, 10].
+  -->
+  <body>
+    <div id="d1"></div>
+    <script>
+      var arr = [1, 2, 3, 4, 5];
+      var result = arr.map((value, index) => {
+        value = value * 2;
+        return value;
+      });
+      console.log(result);
+      document.getElementById("d1").innerHTML = result;
+    </script>
+  </body>
+</html>

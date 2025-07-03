@@ -1,0 +1,19 @@
+<html>
+  <!--
+      You are given an array of temperatures in Celsius: [0, 10, 20, 30, 40]. 
+      Use the map method to create a new array with each temperature converted to Fahrenheit. 
+      The formula for conversion is F=C. 
+      Equation: °F = (°C × 9/5) + 32
+  -->
+  <body>
+    <div id="d1"></div>
+    <script>
+      var temp = [0, 10, 20, 30, 40];
+      var result = temp.map((value,index)=>{
+        value = (value * 9/5) + 32;
+        return value;
+      })
+      document.getElementById("d1").innerHTML = result;
+    </script>
+  </body>
+</html>

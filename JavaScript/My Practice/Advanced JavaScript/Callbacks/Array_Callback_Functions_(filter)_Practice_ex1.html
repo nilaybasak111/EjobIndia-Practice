@@ -1,0 +1,19 @@
+<html>
+  <!--
+      Given an array of numbers: [5, 12, 8, 130, 44]. 
+      Using the filter method, create a new array that only contains numbers greater than 10.
+  -->
+  <body>
+    <div id="d1"></div>
+    <script>
+      var arr = [5, 12, 8, 130, 44];
+      var result = arr.filter((value, index) => {
+        if (value > 10) {
+          return true;
+        }
+      });
+      //console.log(result);
+      document.getElementById("d1").innerHTML = result;
+    </script>
+  </body>
+</html>

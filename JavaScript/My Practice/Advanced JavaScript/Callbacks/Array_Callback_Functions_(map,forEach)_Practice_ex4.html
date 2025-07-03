@@ -1,0 +1,33 @@
+<html>
+  <!--
+      Using filter and map Get the Names of Adults from this User Object:
+      const users = [
+                        { name: 'John', age: 25 },
+                        { name: 'Jane', age: 17 },
+                        { name: 'Sam', age: 30 },
+                        { name: 'Alex', age: 15 }
+                    ];
+      Create a new array containing only the names of users who are 18 or older
+  -->
+  <body>
+    <div id="d1"></div>
+    <script>
+      const users = [
+        { name: "John", age: 25 },
+        { name: "Jane", age: 17 },
+        { name: "Sam", age: 30 },
+        { name: "Alex", age: 15 },
+      ];
+      const filterResult = users.filter((value, index) => {
+        if (value.age >= 18) {
+          return true;
+        }
+      });
+      const result = filterResult.map((value, index) => {
+        return value.name;
+      });
+      console.log(result);
+      document.getElementById("d1").innerHTML = result;
+    </script>
+  </body>
+</html>

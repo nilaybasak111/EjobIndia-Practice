@@ -1,0 +1,20 @@
+<html>
+  <!--
+      Given an array of product names: ["Laptop", "Mouse", "Keyboard"]. 
+      Use the map method to create a new array of HTML list item strings for each product. 
+      The result should be ["<li>Laptop</li>", "<li>Mouse</li>", "<li>Keyboard</li>"].
+      Means Ordered List of the Products.
+  -->
+  <body>
+    <div id="d1"></div>
+    <script>
+      var names = ["Laptop", "Mouse", "Keyboard"];
+      var result = "<ol>";
+      var list = names.map((value, index) => {
+        return `<li>${value}</li>`;
+      });
+      result = result + list.join("") + "</ol>";
+      document.getElementById("d1").innerHTML = result;
+    </script>
+  </body>
+</html>

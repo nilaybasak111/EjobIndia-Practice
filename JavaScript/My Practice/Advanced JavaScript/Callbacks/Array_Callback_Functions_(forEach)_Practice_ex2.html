@@ -1,0 +1,18 @@
+<html>
+  <!--
+      You are given an array of numbers: [10, 20, 30, 40, 50]. 
+      Using the forEach method, calculate and log the sum of all the numbers in the array.
+  -->
+  <body>
+    <div id="d1"></div>
+    <script>
+      var arr = [10, 20, 30, 40, 50];
+      var sum = 0;
+      arr.forEach((value, index) => {
+        sum = sum + value;
+      });
+      console.log("This is Sum ", sum);
+      document.getElementById("d1").innerHTML = "Sum of all numbers: " + sum;
+    </script>
+  </body>
+</html>

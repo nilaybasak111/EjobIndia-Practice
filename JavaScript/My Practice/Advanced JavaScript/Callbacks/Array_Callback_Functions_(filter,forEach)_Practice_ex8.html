@@ -1,0 +1,32 @@
+<html>
+  <!--
+      Using filter and forEach Send Notifications to Active Users:
+      You have an array of user objects
+      const users = [
+                      { id: 1, isActive: true, email: 'user1@example.com' },
+                      { id: 2, isActive: false, email: 'user2@example.com' },
+                      { id: 3, isActive: true, email: 'user3@example.com' }
+                    ];
+      First, use filter to get an array of only active users. 
+      Then, use forEach to log a message to the console for each active user.
+      Like "Sending notification to user1@example.com".
+  -->
+  <body>
+    <script>
+      const users = [
+        { id: 1, isActive: true, email: "user1@example.com" },
+        { id: 2, isActive: false, email: "user2@example.com" },
+        { id: 3, isActive: true, email: "user3@example.com" },
+      ];
+      var activeUsers = users.filter((value,index)=>{
+        if(value.isActive == true){
+            return true;
+        }
+      })
+      console.log(activeUsers);
+      var result = activeUsers.forEach((value,index)=>{
+        document.writeln(`Sending notification to ${value.email}<br />`);
+      })
+    </script>
+  </body>
+</html>

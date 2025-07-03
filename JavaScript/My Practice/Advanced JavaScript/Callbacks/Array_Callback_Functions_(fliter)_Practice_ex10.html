@@ -1,0 +1,22 @@
+<html>
+  <!--
+      You have an array of words: ["level", "hello", "radar", "world", "noon"]. 
+      Use the filter method to create a new array containing only the words that are palindromes 
+      (words that read the same forwards and backward).
+  -->
+  <body>
+    <div id="d1"></div>
+    <script>
+      var words = ["level", "hello", "radar", "world", "noon"];
+      var result = words.filter((value, index) => {
+        console.log(typeof value.split(""));
+        var reverseOrder = value.split("").reverse().join("");
+        if (value == reverseOrder) {
+          return true;
+        }
+      });
+      //console.log(result)
+      document.getElementById("d1").innerHTML = result;
+    </script>
+  </body>
+</html>

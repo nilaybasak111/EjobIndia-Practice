@@ -1,0 +1,19 @@
+<html>
+  <!--
+      You have an array of names: ["Alice", "Bob", "Charlie"]. 
+      Use the forEach method to log a greeting for each name to the console.
+      Like "Hello, Alice!", "Hello, Bob!", and "Hello, Charlie!".
+  -->
+  <body>
+    <div id="d1"></div>
+    <script>
+      var arr = ["Alice", "Bob", "Charlie"];
+      var res = "";
+      arr.forEach((value, index) => {
+        res = res + `Hello, ${value}!<br>`;
+      });
+      console.log(res);
+      document.getElementById("d1").innerHTML = res;
+    </script>
+  </body>
+</html>

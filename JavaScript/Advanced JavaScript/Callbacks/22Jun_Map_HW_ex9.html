@@ -3,6 +3,7 @@
         arr1 = [10,20,45,89,100]
         arr2 = [35,20,45,200]
         Union of arr1 and arr2 using Only map()
+        answer = [10,20,35,45,89,100,200]
   -->
   <body>
     Enter First Array :
@@ -22,21 +23,22 @@
       unionBtn.addEventListener("click", () => {
         var arr1 = document.getElementById("arr1").value.split(",");
         var arr2 = document.getElementById("arr2").value.split(",");
-        var arr3 = [];
-        console.log(arr1, arr2);
-        var union = arr1.map((value, index) => {
-          if (arr2.includes(value)) {
-            return arr3.push(value);
-          }
+
+        // Combine arrays and use Map to get unique values while preserving order.
+        const combined = [...arr1, ...arr2];
+        const uniqueMap = new Map();
+
+        combined.map((item) => {
+          uniqueMap.set(item, true); // Use Map to track uniqueness
         });
-        console.log(arr3);
-        if (arr3.length == 0) {
-          return `${(document.getElementById("union").innerHTML =
-            "No Common Elements Found")}`;
-        }
+
+        const union = Array.from(uniqueMap.keys()); // Convert Map keys to array
+
         document.getElementById(
           "union"
-        ).innerHTML = `Union of First and Second Array is : ${arr3} `;
+        ).innerHTML = `Union of First and Second Array is : ${union.join(
+          ", "
+        )} `; // Use join to display array correctly
       });
     </script>
   </body>
