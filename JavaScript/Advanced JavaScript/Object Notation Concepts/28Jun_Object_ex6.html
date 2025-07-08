@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <script>
+      // Adding a new function inside an object
+      var dimension = {
+        len: 10,
+        bred: 5,
+        hgt: 15,
+        findar: function () {
+          return this.len * this.bred;
+        }, // Arrow does not work here
+        findvol: function () {
+          return this.len * this.bred * this.hgt;
+        },
+        disp: function (msg) {
+          document.write(msg);
+        },
+      };
+
+      dimension.disp("welcome to object notation example<br>");
+      document.writeln(
+        `Area : ${dimension.findar()}  Vol: ${dimension.findvol()}`
+      );
+    </script>
+  </body>
+</html>

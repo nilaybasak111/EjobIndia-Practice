@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <div id="d1"></div>
+    <script>
+      var studinfo = [
+        { stid: 10, stnm: "ravi", phy: 90, chem: 78, bio: 78 },
+        { stid: 20, stnm: "sita", phy: 88, chem: 90, bio: 80 },
+        { stid: 30, stnm: "ram", phy: 85, chem: 80, bio: 90 },
+        { stid: 40, stnm: "gita", phy: 95, chem: 85, bio: 88 },
+      ];
+      var res = `<table border='1' cellpadding='5' cellspacing='0'> 
+                     <tr> <th>St_id</th> <th>St_nm</th>  <th>Total Marks</th> </tr>`;
+
+      studinfo.forEach((val, index) => {
+        res =
+          res +
+          `
+                     <tr> 
+                        <td>${val.stid}</td> 
+                        <td>${val.stnm}</td> 
+                        <td>${val.phy + val.chem + val.bio}</td> 
+                     </tr>`;
+      });
+      res = res + `</table>`;
+      document.getElementById("d1").innerHTML = res;
+    </script>
+  </body>
+</html>

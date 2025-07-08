@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script>
+      // reduceRight() method use to reduce the array(right to left) to a single value
+      // Apart from this, the rest of the workflow is just like reduce()
+      var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      var result = arr.reduceRight((accu, val, index) => {
+        console.log("accu : ", accu);
+        accu = accu + val;
+        return accu;
+      });
+
+      document.write("Sum of all elements in the array is: " + result);
+    </script>
+  </body>
+</html>

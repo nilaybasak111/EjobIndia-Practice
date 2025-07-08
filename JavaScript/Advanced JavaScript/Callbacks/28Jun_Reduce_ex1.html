@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <script>
+      // reduce() method use to reduce the array(left to right) to a single value
+      // The reduce method in JavaScript goes through each item in an array and keep updating an accumulator a running result.
+      // So that, at the end, the accumulator holds the single final value.
+      // The accumulator starts with an initial value you give (or the first array item if you don't),
+      // and gets updated with each step as the array is processed
+      var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      var result = arr.reduce((accu, val, index) => {
+        console.log("accu : ", accu);
+        accu = accu + val;
+        return accu;
+      });
+
+      document.write("Sum of all elements in the array is: " + result);
+    </script>
+  </body>
+</html>

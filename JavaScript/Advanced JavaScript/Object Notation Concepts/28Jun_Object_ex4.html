@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <script>
+      // Don't  give samne property name to multiple time in a same object
+      var emp = {
+        id: 20,
+        name: "Subhas",
+        loc: "kolkata",
+        dept: "comouter",
+        email: "subhas123@gmail.com",
+        id: 25,
+      };
+      // document.write(emp);
+
+      // Adding a property "lang" to the object
+      //approach 1 :
+      emp["lang"] = ["java", "python", "c++"];
+
+      //approach 2 :
+      emp.grade = "Excellent";
+
+      console.log(emp);
+      document.writeln(`
+               <ol>
+                  <li>Empid : ${emp.id}</li>
+                  <li>Empname : ${emp.name}</li> 
+                    <li>Emploc : ${emp.loc}</li> 
+                    <li>Empdept : ${emp.dept}</li>
+                    <li>Empemail : ${emp.email}</li>  
+                    <li>Emplang : ${emp.lang}</li> 
+                    <li>Empgrade : ${emp.grade}</li>
+                </ol>
+             `);
+    </script>
+  </body>
+</html>

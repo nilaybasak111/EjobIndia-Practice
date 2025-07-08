@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script>
+      // Getting id value from this object using a loop
+      var test = {
+        id: 10,
+        nm: "nilay",
+        age: 25,
+        skills: ["js", "java", "python"],
+        address: {
+          city: "delhi",
+          state: "delhi",
+          country: "india",
+        },
+      };
+      for (let v in test) {
+        if (v == "address") {
+          for (let k in test[v]) {
+            console.log(k, "------>", test[v][k]);
+          }
+        } else {
+          console.log(v, "------>", test[v]);
+        }
+      }
+    </script>
+  </body>
+</html>

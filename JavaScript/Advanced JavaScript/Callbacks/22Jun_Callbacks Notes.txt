@@ -1,0 +1,94 @@
+Array normal built in functions ---- ok 
+Array callback built in functions : 
+forEach() 
+map() 
+filter() 
+find()
+findIndex()
+reduce()
+reduceRight()
+every()
+some()
+
+javascript : 
+synchronous approach :
+
+go to station  1
+go to ticket counter 2
+buy ticket 3
+go to platform 4
+boaring the triain 5 
+
+asynchronous approach :
+
+app book the ticket 3
+go to station 1
+go to platform 4
+boaring the train 5 
+
+asynchronous approach : 
+
+callback function : 
+
+var arr1=[v1,v2,v3,v4,v5]
+
+synchronous approach : 
+
+for(let i=0;i<arr1.length;i++)
+{
+ //code
+}
+
+
+asynchronous approach : 
+
+arr1.built_in_function((val,index)=>{
+  //code  callback function 
+})
+
+
+forEach()   map()
+
+forEach() ----> callback ---> will not be able to return anything  
+
+map() ----> callback ----> this will return the value  
+
+forEach() will not return anything  
+
+map() will return a array to us. 
+
+
+table 
+
+cityid    cityname
+0 
+1 
+2 
+3
+
+filter() ----> returns a filtered array which satisfy the condition
+find() ----> return the first element of array which satisfy the condition 
+findIndex() ---> returns the index of the first element of array that satisfies the codition
+
+
+filter() --->  
+
+var arr=[v1,v2,v3,v4,v5,v5]
+
+
+condition ----> filter()
+
+return array of filtered elements []
+
+every()
+some() 
+
+both these methods return boolean value  true / false 
+
+var arr=[v1,v2,v3,v4,v5,v6]
+
+every() ---->   callback -----> condition --->  true : all the array elements will satisfy the condition. 
+                                          ----> false  
+										  
+some() ----->   callback -----> condition ----> true : atleast 1 array element will satisfy the condition . 
+                                          ----> false 

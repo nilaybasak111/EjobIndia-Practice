@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <script>
+      // Here we are using an array of words
+      // We are using reduce() & reduceRight() to covert the array to a string / sentence
+      var arr = ["i", "am", "a", "javascript", "developer"];
+
+      // Using reduce() to convert the array to a string
+      var result1 = arr.reduce((accu, val, index) => {
+        //console.log("accu : ", accu);
+        accu = accu + " " + val + " ";
+        return accu;
+      }, ""); // We are passing an empty string("") as the initial value of accu
+
+      document.write("Result 1 : " + result1 + "<br>");
+
+      // Using reduceRight() to convert the array to a string
+      var result2 = arr.reduceRight((accu, val, index) => {
+        //console.log("accu : ", accu);
+        accu = accu + " " + val + " ";
+        return accu;
+      }, ""); // We are passing an empty string("") as the initial value of accu
+
+      document.write("Result 2 : " + result2 + "<br>");
+
+      // Using reduce() to convert the array to a string
+      var result3 = arr.reduce((accu, val, index) => {
+        if (index % 2 == 0) {
+          console.log("accu : ", accu);
+          accu = accu + " " + val + " ";
+        }
+        return accu;
+      }, "");
+
+      document.write("Result 3 : " + result3 + "<br>");
+    </script>
+  </body>
+</html>

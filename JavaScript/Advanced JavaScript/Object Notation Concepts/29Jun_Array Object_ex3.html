@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <script>
+      var studdata = [
+        { id: 1, name: "Sourav", loc: "kolkata" },
+        { id: 2, name: "Rajesh", loc: "pune" },
+        { id: 3, name: "Ravi", loc: "assam" },
+        { id: 4, name: "Seema", loc: "gwahati" },
+      ];
+      var srch = () => {
+        let stid = document.getElementById("stid").value;
+        let result = studdata.find((item) => {
+          if (item.id == stid) {
+            return item;
+          }
+        });
+        if (result) {
+          document.getElementById(
+            "head3"
+          ).innerHTML = ` Name: ${result.name}, Location: ${result.loc}`;
+        } else {
+          document.getElementById("head3").innerHTML = "No record found";
+        }
+      };
+    </script>
+    Enter StudId:
+    <input type="number" id="stid" />
+    <br />
+    <input type="button" value="Search" onclick="srch()" />
+    <br />
+    <h3 id="head3"></h3>
+  </body>
+</html>
