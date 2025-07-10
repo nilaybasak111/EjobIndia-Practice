@@ -1,0 +1,20 @@
+<html>
+  <!--
+       Importent Interview Questions
+       Hoisting is a JavaScript Level Feature
+       Hoisting is mainly work with Let
+       Hoisting : Here all type of variable and method declaration will be moved up to the top of the script at the time of execution
+  -->
+  <body>
+    <script>
+      x = 10;
+      document.writeln(`x : ${x}`);
+      var x; //variable hoisting
+      disp("welcome to hoisting concept");
+      function disp(msg) {
+        //method hoisting
+        document.writeln(`<h3>${msg}</h3>`);
+      }
+    </script>
+  </body>
+</html>

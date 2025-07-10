@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <script>
+      // Spread Operator Usecase
+      var emp = {
+        id: 20,
+        nm: "rajiv",
+        loc: "pune",
+        dept: "computer",
+      };
+
+      var dupemp = { ...emp, em: "sk123@gmail.com", gen: "male" };
+
+      console.log(dupemp);
+
+      var emp2 = { skills: ["c", "java", "c++"], salary: 50000 };
+
+      var info = { ...emp, ...emp2 };
+
+      console.log(info);
+      console.dir(info);
+    </script>
+  </body>
+</html>

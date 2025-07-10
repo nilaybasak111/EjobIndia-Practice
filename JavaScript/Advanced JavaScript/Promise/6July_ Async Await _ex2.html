@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <script>
+      // Async Await
+      // In function .then() & .catch() will not work
+      // So here we use try-catch-finally in this async function
+      var chkage = async () => {
+        try {
+          let pr = new Promise((resolve, reject) => {
+            let v = document.getElementById("ag").value;
+            if (v > 0) {
+              resolve("Thank you age is ok..!");
+            } else {
+              reject("Age must not be negetive..!");
+            }
+          });
+          //without await we can not fetch the response of promise
+          document.getElementById("head3").innerHTML = await pr;
+        } catch (err) {
+          document.getElementById("head3").innerHTML = "";
+          console.error(err);
+        } finally {
+          alert("Task is done");
+        }
+      };
+    </script>
+    Enter Age:
+    <input type="number" id="ag" />
+    <br />
+    <br />
+    <input type="button" value="CHECK" onclick="chkage()" />
+    <br />
+    <br />
+    <h3 id="head3"></h3>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <script>
+      // Nested Function
+      // Function inside a function
+      function outer(val, msg) {
+        document.writeln(`<h3>${msg}</h3>`);
+        function inner() {
+          let f = 1;
+          for (let i = 1; i <= val; i++) {
+            f = f * i;
+          }
+          document.writeln(`Required factorial : ${f}`);
+        }
+
+        inner(); // This inner function only works inside outer function
+      }
+      outer(6, "welcome to nested function concept");
+    </script>
+  </body>
+</html>

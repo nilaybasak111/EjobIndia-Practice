@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <script>
+      // Local Storage
+      var store = () => {
+        let v = document.getElementById("usid").value;
+        // setItem() set key and value pairs in local storage
+        localStorage.setItem("userid", v);
+      };
+      var show = () => {
+        // getItem() fetch & return value of key
+        let r = localStorage.getItem("userid");
+        alert(r);
+      };
+      var del = () => {
+        // removeItem() remove key from local storage
+        localStorage.removeItem("userid");
+      };
+    </script>
+    Enter userid :
+    <input type="text" id="usid" />
+    <br />
+    <br />
+    <input type="button" value="STORE" onclick="store()" />
+    <br />
+    <br />
+    <input type="button" value="SHOW" onclick="show()" />
+    <br />
+    <br />
+    <input type="button" value="DELETE" onclick="del()" />
+  </body>
+</html>

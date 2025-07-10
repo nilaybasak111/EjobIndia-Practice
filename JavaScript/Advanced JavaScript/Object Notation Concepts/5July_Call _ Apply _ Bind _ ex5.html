@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <script>
+            var test={
+                len:20,
+                bred:15
+            }
+
+            function calc(msg,hgt) 
+            {
+                console.log(msg);
+                return this.len*this.bred*hgt;
+            }
+
+            // call()
+            // Here we are sending values directly
+            var r1=calc.call(test,"call example",5); 
+            document.writeln(`call : ${r1} <br>`);  
+
+            // apply()
+            // Here we are sending values as an array
+            var r2=calc.apply(test,["apply function",10]);
+            document.writeln(`apply : ${r2} <br>`);
+
+            // bind() 
+            // Here we are sending values directly
+            // But bind() returns a method reference
+            // Which can be called later as a function
+            var r3=calc.bind(test,"bind example for testing",20); //method reference
+            document.writeln(`bind : ${r3()} <br>`);
+        </script>
+    </body>
+</html>
+//1:35:00

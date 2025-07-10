@@ -1,0 +1,16 @@
+<html>
+  <!-- 
+      Hoisting will not work for variables declared with let, const, or class—accessing them before declaration results in a ReferenceError due to the temporal dead zone
+  -->
+  <body>
+    <script>
+      // y="hello world";
+      // document.writeln(y);
+      // let y; //hoisting will not work with let
+      sum(10, 20);
+      var sum = (x, y) => {
+        document.writeln(`Required sum is : ${x + y}`);
+      }; // hoisting geature will not work for arrow function
+    </script>
+  </body>
+</html>

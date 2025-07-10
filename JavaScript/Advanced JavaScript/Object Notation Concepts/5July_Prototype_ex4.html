@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <script>
+      // Importent Interview Questions
+      // Method constructor
+      function employee(nm, ag, em) {
+        this.name = nm;
+        this.age = ag;
+        this.email = em;
+      }
+      // Prototype is a property of object notation where we can have the common properties of object notations
+      employee.prototype = {
+        gen: "male",
+        loc: "kolkata",
+        desig: "developer",
+        dept: "computer",
+      };
+
+      var emp1 = new employee("Rahul", 25, "rahul@gmail.com");
+      var emp2 = new employee("Sourav", 33, "sk123@gmail.com");
+      var emp3 = new employee("Abhishek", 45, "abhi@gmail.com");
+
+      console.log(emp1);
+      console.log(emp2.age);
+      console.log(emp3.dept);
+    </script>
+  </body>
+</html>

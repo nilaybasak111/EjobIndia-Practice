@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <script>
+      // Exception Handling
+      var chk = () => {
+        try {
+          let a = document.getElementById("ag").value;
+          if (a <= 0) {
+            throw new Error("Age must not be negative");
+          } else {
+            document.getElementById("head3").innerHTML = `Age is fine`;
+          }
+        } catch (err) {
+          console.error(err);
+        } finally {
+          alert("Task is done");
+        }
+      };
+    </script>
+    Enter Age :
+    <input type="number" id="ag" />
+    <br />
+    <br />
+    <input type="button" value="CHECK" onclick="chk()" />
+    <br />
+    <br />
+    <h3 id="head3"></h3>
+  </body>
+</html>

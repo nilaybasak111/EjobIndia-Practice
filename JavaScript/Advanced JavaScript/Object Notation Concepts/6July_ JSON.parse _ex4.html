@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <script>
+      // Using JSON.parse() we can convert a JSON string to a JavaScript object
+      var ex = `{
+                "id":10,
+                "nm":"nilay",
+                "age":30,
+                "loc":"kolkata",
+                "dp":"physics",
+                "skills":["c","c++","java","python"],
+                "address":{"city":"kolkata","st":"wb" }
+            }`;
+
+      var result = JSON.parse(ex);
+
+      console.log(result.skills);
+    </script>
+  </body>
+</html>
