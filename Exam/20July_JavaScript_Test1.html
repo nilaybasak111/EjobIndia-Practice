@@ -1,0 +1,106 @@
+<html>
+  <body>
+    <script>
+      var obj1 = [
+        {
+          stnm: "Nilay Basak",
+          stid: 96,
+          maths: 59,
+          physics: 90,
+          chemistry: 85,
+          biology: 73,
+          department: "IT",
+          location: "Nabadwip",
+        },
+        {
+          stnm: "Ayan Ghosh",
+          stid: 55,
+          maths: 95,
+          physics: 87,
+          chemistry: 96,
+          biology: 74,
+          department: "CSE",
+          location: "Howrah",
+        },
+        {
+          stnm: "Ram Saha",
+          stid: 99,
+          maths: 47,
+          physics: 36,
+          chemistry: 66,
+          biology: 75,
+          department: "BE",
+          location: "Katwa",
+        },
+      ];
+
+      function showDetails() {
+        var department = document.getElementById("department").value;
+        var location = document.getElementById("location").value;
+        var student = obj1.find(
+          (s) => s.department === department && s.location === location
+        );
+        var detailsDiv = document.getElementById("studentDetails");
+        var totalMarksDiv = document.getElementById("totalMarks");
+        if (student) {
+          var details = "<h3>Student Details:</h3>";
+          for (var key in student) {
+            details +=
+              "<p><strong>" + key + ":</strong> " + student[key] + "</p>";
+          }
+          detailsDiv.innerHTML = details;
+          totalMarksDiv.innerHTML = "";
+        } else {
+          detailsDiv.innerHTML =
+            "<p>No student found with the selected department and location.</p>";
+          totalMarksDiv.innerHTML = "";
+        }
+      }
+
+      function calculateTotalMarks() {
+        var department = document.getElementById("department").value;
+        var location = document.getElementById("location").value;
+        var student = obj1.find(
+          (s) => s.department === department && s.location === location
+        );
+        var totalMarksDiv = document.getElementById("totalMarks");
+        if (student) {
+          var totalMarks =
+            student.maths +
+            student.physics +
+            student.chemistry +
+            student.biology;
+          totalMarksDiv.innerHTML =
+            "Total Marks: <strong>" + totalMarks + "</strong>";
+        } else {
+          totalMarksDiv.innerHTML =
+            "<p>No student found with the selected department and location.</p>";
+        }
+      }
+    </script>
+    <form>
+      <label for="department">Select Department:</label>
+      <select id="department" name="department">
+        <option value="IT">IT</option>
+        <option value="CSE">CSE</option>
+        <option value="BE">BE</option>
+      </select>
+      <br /><br />
+      <label for="location">Select Location:</label>
+      <select id="location" name="location">
+        <option value="Nabadwip">Nabadwip</option>
+        <option value="Howrah">Howrah</option>
+        <option value="Katwa">Katwa</option>
+      </select>
+      <br /><br />
+      <button type="button" onclick="showDetails()">Show Details</button>
+      <br /><br />
+      <button type="button" onclick="calculateTotalMarks()">
+        Calculate Total Marks
+      </button>
+      <br /><br />
+      <div id="totalMarks"></div>
+    </form>
+    <div id="studentDetails"></div>
+  </body>
+</html>

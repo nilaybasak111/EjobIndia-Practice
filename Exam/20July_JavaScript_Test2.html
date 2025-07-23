@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <h3>Search Cricketer Names</h3>
+    <input type="text" id="searchBox" placeholder="Type to search..." />
+    <div id="result"></div>
+
+    <script>
+      var arr = [
+        "sachin",
+        "sourav",
+        "Rahul",
+        "sehwag",
+        "anil",
+        "virat",
+        "rohit",
+        "zaheer",
+      ];
+
+      var searchInput = document.getElementById("searchBox");
+      searchInput.addEventListener("input", function () {
+        var searchStr = this.value.trim().toLowerCase();
+        var resultDiv = document.getElementById("result");
+
+        if (searchStr.length === 0) {
+          resultDiv.innerHTML = "";
+          return;
+        }
+
+        var filtered = arr.filter(function (name) {
+          return name.toLowerCase().startsWith(searchStr);
+        });
+
+        if (filtered.length) {
+          resultDiv.innerHTML = filtered
+            .map((name) => `<p>${name}</p>`)
+            .join("");
+        } else {
+          resultDiv.innerHTML = "<p>No match found.</p>";
+        }
+      });
+    </script>
+  </body>
+</html>

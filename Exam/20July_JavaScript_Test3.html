@@ -1,0 +1,77 @@
+<html>
+  <body>
+    <h3>Original Array</h3>
+    <div id="arrayBox"></div>
+
+    <button onclick="runAsyncTasks()">
+      Show Non-Repeating Values & Frequencies
+    </button>
+
+    <h3>Non-Repeating Values</h3>
+    <div id="nonRepeatingBox"></div>
+
+    <h3>Frequencies</h3>
+    <div id="frequencyBox"></div>
+    <script>
+      const arr = [
+        "hi",
+        "hello",
+        "hi",
+        "welcome",
+        "php",
+        "fine",
+        "java",
+        "php",
+      ];
+      document.getElementById("arrayBox").innerText = JSON.stringify(arr);
+
+      function findNonRepeating(arr) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            const nonRepeating = arr.filter(
+              (word) => arr.indexOf(word) === arr.lastIndexOf(word)
+            );
+            const uniqueNonRepeating = nonRepeating.filter(
+              (value, idx, self) => self.indexOf(value) === idx
+            );
+            resolve(uniqueNonRepeating);
+          }, 0);
+        });
+      }
+
+      function findFrequencies(arr) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            const visited = [];
+            const frequencyArr = [];
+            for (let i = 0; i < arr.length; i++) {
+              if (!visited.includes(arr[i])) {
+                let count = 0;
+                for (let j = 0; j < arr.length; j++) {
+                  if (arr[j] === arr[i]) count++;
+                }
+                frequencyArr.push([arr[i], count]);
+                visited.push(arr[i]);
+              }
+            }
+            resolve(frequencyArr);
+          }, 0);
+        });
+      }
+
+      async function runAsyncTasks() {
+        const nonRepeating = await findNonRepeating(arr);
+        document.getElementById("nonRepeatingBox").innerText =
+          nonRepeating.length ? nonRepeating.join(", ") : "None";
+
+        const frequencies = await findFrequencies(arr);
+        let freqHtml = "<ul>";
+        frequencies.forEach(([word, freq]) => {
+          freqHtml += `<li>${word}: ${freq}</li>`;
+        });
+        freqHtml += "</ul>";
+        document.getElementById("frequencyBox").innerHTML = freqHtml;
+      }
+    </script>
+  </body>
+</html>
