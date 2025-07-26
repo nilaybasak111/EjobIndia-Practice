@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Ex1 extends Component {
+class July19Ex1 extends Component {
   // render() in React shows what should appear on the screen based on the component’s data
   render() {
     return (
@@ -21,4 +21,4 @@ class Ex1 extends Component {
   }
 }
 
-export default Ex1;
+export default July19Ex1;

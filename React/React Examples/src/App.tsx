@@ -1,11 +1,17 @@
-import Ex1 from "./components/19July_ex1";
-import Ex2 from "./components/19July_ex2";
+import July19Ex1 from "./components/19July_ex1";
+import July19Ex2 from "./components/19July_ex2";
+import UserInput from "./components/26July_ User Input_ex2";
+import UserInput1 from "./components/26July_ User Input_ex3";
+import July26Ex1 from "./components/26July_ex1";
 
 function App() {
   return (
     <>
-      <Ex1 />
-      <Ex2 />
+      {/* <July19Ex1 />
+      <July19Ex2 />
+      <July26Ex1 />
+      <UserInput /> */}
+      <UserInput1 />
     </>
   );
 }
