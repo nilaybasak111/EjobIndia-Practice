@@ -1,3 +1,5 @@
+// Find The Total Item & Total Price & Show Them In A Table
+
 import React, { Component } from "react";
 
 interface July27HWEx1Type {
@@ -92,6 +94,15 @@ class July27HWEx1 extends Component {
                   <td style={{ textAlign: "center" }}>{item.total}</td>
                 </tr>
               ))}
+              <tr>
+                <td style={{ textAlign: "center" }}>Total Price</td>
+                <td style={{ textAlign: "center" }}>
+                  {this.state.totalItem.reduce(
+                    (total, item) => total + item.total,
+                    0
+                  )}
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
