@@ -1,0 +1,17 @@
+#style1{
+    background-color: aqua;
+    text-align: center;
+    font-style: italic;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 30%;
+} 
+
+li{
+    color:red;
+    font-size: 20px;
+}
+p{
+    color:blue;
+    background-color: yellow;
+}
