@@ -15,6 +15,9 @@ import AUG3ExternalCssEx2 from "./components/3AUG_ External Css _ex2";
 import AUG3BootstrapEx3 from "./components/3AUG_ Bootstrap _ex3";
 import AUG3PropsParentEx4 from "./components/3AUG_ Props Parent _ex4";
 import AUG3InformationEx5 from "./components/3AUG_ Information _ex5";
+import AUG9FunctionPassingParentEx2 from "./components/9AUG_ Function Passing Parent _ex2";
+import AUG9StudentInfoEx1 from "./components/9AUG_ Student Info _ex1";
+import AUG9ItemsHW1 from "./components/9AUG_ Items _HW1";
 
 function App() {
   return (
@@ -34,8 +37,11 @@ function App() {
       <AUG3InlineCssEx1 />
       <AUG3ExternalCssEx2 />
       <AUG3BootstrapEx3 />
-      <AUG3PropsParentEx4 /> */}
+      <AUG3PropsParentEx4 />
       <AUG3InformationEx5 />
+      <AUG9StudentInfoEx1 />
+      <AUG9FunctionPassingParentEx2 /> */}
+      <AUG9ItemsHW1 />
     </>
   );
 }

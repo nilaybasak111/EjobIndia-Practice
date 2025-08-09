@@ -1,3 +1,6 @@
+// Display Name , Department, Email in 3AUG_ Display _ex5.tsx from 3AUG_ Information _ex5.tsx using props
+// For Single Student
+
 import React, { Component } from "react";
 import AUG3DisplayEx5 from "./3AUG_ Display _ex5";
 
