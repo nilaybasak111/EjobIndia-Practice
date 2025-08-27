@@ -20,6 +20,7 @@ import AUG9StudentInfoEx1 from "./components/9AUG_ Student Info _ex1";
 import AUG9ItemsHW1 from "./components/9AUG_ Items _HW1";
 import AUG10LifecycleEx1 from "./components/10AUG_ Lifecycle _ex1";
 import AUG10LifecycleEx2 from "./components/10AUG_ Lifecycle _ex2";
+import AUG10EmpDetails from "./components/10AUG_ EmpDetails _HW1";
 
 function App() {
   return (
@@ -44,8 +45,9 @@ function App() {
       <AUG9StudentInfoEx1 />
       <AUG9FunctionPassingParentEx2 />
       <AUG9ItemsHW1 />
-      <AUG10LifecycleEx1 /> */}
-      <AUG10LifecycleEx2 />
+      <AUG10LifecycleEx1 />
+      <AUG10LifecycleEx2 /> */}
+      <AUG10EmpDetails />
     </>
   );
 }
