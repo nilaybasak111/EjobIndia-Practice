@@ -1,0 +1,31 @@
+Class component ----  It has a specific lifecycle . It follows the life cycle methods  through out its execution.
+
+Functional component ---- We do not have any lifecycle methods. Functional component does not have a lifecycle.
+
+Class Component ---- it has 4 states :
+
+1. Initialisation state (state 1): it will initialise the state object and the props.
+    
+     constructor()----> it will initialise the state and props.
+
+2. Mounting state / Loading state (state 2): in this state the class component will
+be loaded .
+
+   componentWillMount()
+   render()----> this will return from the component
+   componentDidMount()
+
+3. Updating state (state 3): when we will update any state property in my component 
+using setState() then my component will move to the updating state.
+
+     shouldComponentUpdate() ---> it is a boolean functions which returns true/false
+	 if this method will return false then the state update will not be done.
+	 
+	 componentWillUpdate()
+	 render() ----->this is again called here to show the updated state value.
+     componentDidUpdate()
+
+4. Unmounting state / Unloading state (state 4): When my component will be unloaded
+then it will be in unmounting state.
+     
+	 componentWillUnmount()
