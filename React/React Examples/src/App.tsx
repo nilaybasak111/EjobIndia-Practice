@@ -25,6 +25,8 @@ import AUG10EmpDetails2 from "./components/10AUG_ EmpDetails _HW2";
 import { AUG17RefEx1 } from "./components/17AUG_ Reference _ex1";
 import AUG17RefParentEx2 from "./components/17AUG_ Reference Parent_ex2";
 import AUG17RefParent2Ex2 from "./components/17AUG_ Reference Parent2_ex2";
+import AUG23HooksEx1 from "./hooks/23AUG_ hooks _ex1";
+import AUG23HooksUserInputEx2 from "./hooks/23AUG_ hooks User Input _ex2";
 
 function App() {
   return (
@@ -54,8 +56,10 @@ function App() {
       <AUG10EmpDetails />
       <AUG10EmpDetails2 />
       <AUG17RefEx1 />
-      <AUG17RefParentEx2 /> */}
+      <AUG17RefParentEx2 />
       <AUG17RefParent2Ex2 />
+      <AUG23HooksEx1 /> */}
+      <AUG23HooksUserInputEx2 />
     </>
   );
 }
