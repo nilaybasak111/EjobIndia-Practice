@@ -27,6 +27,9 @@ import AUG17RefParentEx2 from "./components/17AUG_ Reference Parent_ex2";
 import AUG17RefParent2Ex2 from "./components/17AUG_ Reference Parent2_ex2";
 import AUG23HooksEx1 from "./hooks/23AUG_ hooks _ex1";
 import AUG23HooksUserInputEx2 from "./hooks/23AUG_ hooks User Input _ex2";
+import AUG30HooksEx1 from "./hooks/30AUG_ hooks _ex1";
+import AUG30HooksEx2 from "./hooks/30AUG_ hooks _ex2";
+import AUG30HooksEx3 from "./hooks/30AUG_ hooks _ex3";
 
 function App() {
   return (
@@ -58,8 +61,11 @@ function App() {
       <AUG17RefEx1 />
       <AUG17RefParentEx2 />
       <AUG17RefParent2Ex2 />
-      <AUG23HooksEx1 /> */}
+      <AUG23HooksEx1 />
       <AUG23HooksUserInputEx2 />
+      <AUG30HooksEx1 />
+      <AUG30HooksEx2 /> */}
+      <AUG30HooksEx3 />
     </>
   );
 }
