@@ -30,6 +30,8 @@ import AUG23HooksUserInputEx2 from "./hooks/23AUG_ hooks User Input _ex2";
 import AUG30HooksEx1 from "./hooks/30AUG_ hooks _ex1";
 import AUG30HooksEx2 from "./hooks/30AUG_ hooks _ex2";
 import AUG30HooksEx3 from "./hooks/30AUG_ hooks _ex3";
+import SEP01HooksRefEx1 from "./hooks/01SEP_ hooks useRef _ex1";
+import SEP01HooksRefCricketEx2 from "./hooks/01SEP_ hooks useRef _ Cricket _ex2";
 
 function App() {
   return (
@@ -64,8 +66,10 @@ function App() {
       <AUG23HooksEx1 />
       <AUG23HooksUserInputEx2 />
       <AUG30HooksEx1 />
-      <AUG30HooksEx2 /> */}
+      <AUG30HooksEx2 />
       <AUG30HooksEx3 />
+      <SEP01HooksRefEx1 /> */}
+      <SEP01HooksRefCricketEx2 />
     </>
   );
 }
