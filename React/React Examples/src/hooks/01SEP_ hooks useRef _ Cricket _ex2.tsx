@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useLayoutEffect } from "react";
 
 interface SEP01HooksRefCricketEx2Type {
   runs: number;
@@ -45,6 +45,18 @@ const SEP01HooksRefCricketEx2 = () => {
       }
     }, 1000);
   }, [runs, balls]);
+
+  // useLayoutEffect Hook is calls before every render
+  useLayoutEffect(() => {
+    alert("Welcome My Cricket Component is Loading Now..!");
+  }, []);
+
+  // useEffect Hook is calls after every render
+  useEffect(() => {
+    return () => {
+      alert("Bye My Cricket Component is Unloading Now..!");
+    };
+  },[]);
 
   return (
     <div

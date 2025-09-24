@@ -32,6 +32,8 @@ import AUG30HooksEx2 from "./hooks/30AUG_ hooks _ex2";
 import AUG30HooksEx3 from "./hooks/30AUG_ hooks _ex3";
 import SEP01HooksRefEx1 from "./hooks/01SEP_ hooks useRef _ex1";
 import SEP01HooksRefCricketEx2 from "./hooks/01SEP_ hooks useRef _ Cricket _ex2";
+import SEP06HooksUseEffectEx1 from "./hooks/06SEP_ useEffect _ex1";
+import SEP06HooksUseMemoEx2 from "./hooks/06SEP_ useMemo _ex2";
 
 function App() {
   return (
@@ -68,8 +70,10 @@ function App() {
       <AUG30HooksEx1 />
       <AUG30HooksEx2 />
       <AUG30HooksEx3 />
-      <SEP01HooksRefEx1 /> */}
+      <SEP01HooksRefEx1 />
       <SEP01HooksRefCricketEx2 />
+      <SEP06HooksUseEffectEx1 /> */}
+      <SEP06HooksUseMemoEx2 />
     </>
   );
 }
