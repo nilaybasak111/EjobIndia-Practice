@@ -34,6 +34,7 @@ import SEP01HooksRefEx1 from "./hooks/01SEP_ hooks useRef _ex1";
 import SEP01HooksRefCricketEx2 from "./hooks/01SEP_ hooks useRef _ Cricket _ex2";
 import SEP06HooksUseEffectEx1 from "./hooks/06SEP_ useEffect _ex1";
 import SEP06HooksUseMemoEx2 from "./hooks/06SEP_ useMemo _ex2";
+import SEP06MovieTicketBookingHW from "./hooks/06SEP_ Movie Ticket Booking _HW";
 
 function App() {
   return (
@@ -72,8 +73,9 @@ function App() {
       <AUG30HooksEx3 />
       <SEP01HooksRefEx1 />
       <SEP01HooksRefCricketEx2 />
-      <SEP06HooksUseEffectEx1 /> */}
-      <SEP06HooksUseMemoEx2 />
+      <SEP06HooksUseEffectEx1 />
+      <SEP06HooksUseMemoEx2 /> */}
+      <SEP06MovieTicketBookingHW />
     </>
   );
 }
