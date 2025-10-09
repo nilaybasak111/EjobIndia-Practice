@@ -35,6 +35,8 @@ import SEP01HooksRefCricketEx2 from "./hooks/01SEP_ hooks useRef _ Cricket _ex2"
 import SEP06HooksUseEffectEx1 from "./hooks/06SEP_ useEffect _ex1";
 import SEP06HooksUseMemoEx2 from "./hooks/06SEP_ useMemo _ex2";
 import SEP06MovieTicketBookingHW from "./hooks/06SEP_ Movie Ticket Booking _HW";
+import SEP07ContextParentEx1 from "./context API/07SEP_ Parent CreateContext _ex1";
+import SEP07ProfileHW from "./context API/07SEP_ Profile _HW";
 
 function App() {
   return (
@@ -74,8 +76,10 @@ function App() {
       <SEP01HooksRefEx1 />
       <SEP01HooksRefCricketEx2 />
       <SEP06HooksUseEffectEx1 />
-      <SEP06HooksUseMemoEx2 /> */}
+      <SEP06HooksUseMemoEx2 />
       <SEP06MovieTicketBookingHW />
+      <SEP07ContextParentEx1 /> */}
+      <SEP07ProfileHW />
     </>
   );
 }
