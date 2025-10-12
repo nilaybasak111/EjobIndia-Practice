@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SEP07ContextHW from "./07SEP_ CreateContext _HW";
 import SEP07DetailsHW from "./07SEP_ Details _HW";
+import SEP07Details2HW from "./07SEP_ Details2 _HW";
 
 interface SEP07ProfileHWType {
   nm: string;
@@ -48,7 +49,9 @@ const SEP07ProfileHW = () => {
       <SEP07ContextHW.Provider
         value={{ nm: display.nm, age: display.age, loc: display.loc }}
       >
+        {/* We can pass the value to the multiple child components from here */}
         <SEP07DetailsHW />
+        <SEP07Details2HW />
       </SEP07ContextHW.Provider>
     </>
   );

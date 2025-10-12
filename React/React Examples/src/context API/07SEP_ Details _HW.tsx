@@ -3,7 +3,7 @@ import SEP07ContextHW from "./07SEP_ CreateContext _HW";
 
 const SEP07DetailsHW = () => {
   const { nm, age, loc } = useContext(SEP07ContextHW);
-  //console.log(name, age, location);
+  //console.log(nm, age, loc);
 
   return (
     <>
