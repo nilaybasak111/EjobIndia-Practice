@@ -38,6 +38,7 @@ import SEP06MovieTicketBookingHW from "./hooks/06SEP_ Movie Ticket Booking _HW";
 import SEP07ContextParentEx1 from "./context API/07SEP_ Parent CreateContext _ex1";
 import SEP07ProfileHW from "./context API/07SEP_ Profile _HW";
 import SEP13RoutingRulesEx1 from "./routing/13SEP_ Routing Rules _ex1";
+import SEP14DynamicRoutingRoutingRulesHW from "./routing/14SEP_ Dynamic Routing RoutingRules _HW";
 
 function App() {
   return (
@@ -80,8 +81,9 @@ function App() {
       <SEP06HooksUseMemoEx2 />
       <SEP06MovieTicketBookingHW />
       <SEP07ContextParentEx1 />
-      <SEP07ProfileHW /> */}
-      <SEP13RoutingRulesEx1 />
+      <SEP07ProfileHW />
+      <SEP13RoutingRulesEx1 /> */}
+      <SEP14DynamicRoutingRoutingRulesHW />
     </>
   );
 }
