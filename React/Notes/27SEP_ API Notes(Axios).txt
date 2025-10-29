@@ -1,0 +1,50 @@
+API (Application Programming Interface)
+
+it is a backend application which will communicate with the database and 
+perform the database operations.
+
+API --  backend lang --- java,php,node,c#.net,python
+
+2 types :  
+
+1. SOAP based api ---  data response  xml format 
+
+2. RESTFUL API / REST API --  data response is in JSON format. 
+
+WEB SERVICE METHODS :  
+HTTP get() ---> fetch operation from api  
+, HTTP post() --> when we insert any data into the api 
+, HTTP put() ---> when you will update any data using api 
+, HTTP delete() ---> when you delete any data through the api  
+
+3 types of RESTFUL API :
+
+1.  FAKE RESTFUL API :
+    jsonplaceholder api 
+	reqres.in 
+	
+2. LIVE RESTFUL API :
+    accuweather.in 
+	
+3. USERDEFINED RESTFUL API :
+    this is the api to be developed by the programmer using any backend lang.
+	
+
+API  --- REACT APP :
+
+ENDPOINT OF API :
+
+https://jsonplaceholder.typicode.com/posts/1
+
+RESPONSE FROM THE API :
+
+res.data={
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+res.data.userId
+
+

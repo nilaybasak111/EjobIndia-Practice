@@ -40,6 +40,7 @@ import SEP07ProfileHW from "./context API/07SEP_ Profile _HW";
 import SEP13RoutingRulesEx1 from "./routing/13SEP_ Routing Rules _ex1";
 import SEP14DynamicRoutingRoutingRulesHW from "./routing/14SEP_ Dynamic Routing RoutingRules _HW";
 import SEP20ProtectedRoutingRulesEx1 from "./routing/Privated _ Protected Routing/20SEP_ Protected Routing Rules _ex1";
+import SEP27ApiEx1 from "./Data Display From Backend API/27SEP_ API _ex1";
 
 function App() {
   return (
@@ -85,8 +86,9 @@ function App() {
       <SEP07ProfileHW />
       <SEP13RoutingRulesEx1 />
       <SEP14DynamicRoutingRoutingRulesHW />
-      <SEP13RoutingRulesEx1 /> */}
-      <SEP20ProtectedRoutingRulesEx1 />
+      <SEP13RoutingRulesEx1 />
+      <SEP20ProtectedRoutingRulesEx1 /> */}
+      <SEP27ApiEx1 />
     </>
   );
 }
