@@ -45,6 +45,7 @@ import OCT04APIEx1 from "./Data Display From Backend API/04OCT_ API _ex1";
 import OCT04APIEx2 from "./Data Display From Backend API/04OCT_ API _ex2";
 import OCT04APIUsersEx3 from "./Data Display From Backend API/04OCT_ API Users _ex3";
 import OCT04APIUsersEx4 from "./Data Display From Backend API/04OCT_ API Users _ex4";
+import OCT04APIUsersHW from "./Data Display From Backend API/04OCT_ API Users _HW";
 
 function App() {
   return (
@@ -95,8 +96,9 @@ function App() {
       <SEP27ApiEx1 />
       <OCT04APIEx1 />
       <OCT04APIEx2 />
-      <OCT04APIUsersEx3 /> */}
-      <OCT04APIUsersEx4 />
+      <OCT04APIUsersEx3 />
+      <OCT04APIUsersEx4 /> */}
+      <OCT04APIUsersHW />
     </>
   );
 }
