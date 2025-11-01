@@ -50,6 +50,7 @@ import OCT05APISEARCHEx1 from "./Data Display From Backend API/05OCT_API SEARCH 
 import OCT05APIPOSTEx2 from "./Data Display From Backend API/05OCT_API POST _ex2";
 import OCT11APIPaginationEx1 from "./Data Display From Backend API/11OCT_ Pagination API _ex1";
 import OCT11APIPaginationEx2 from "./Data Display From Backend API/11OCT_ Pagination API _ex2";
+import OCT11APIPaginationHW from "./Data Display From Backend API/11OCT_ Pagination API_HW";
 
 function App() {
   return (
@@ -105,8 +106,9 @@ function App() {
       <OCT04APIUsersHW />
       <OCT05APISEARCHEx1 />
       <OCT05APIPOSTEx2 />
-      <OCT11APIPaginationEx1 /> */}
-      <OCT11APIPaginationEx2 />
+      <OCT11APIPaginationEx1 />
+      <OCT11APIPaginationEx2 /> */}
+      <OCT11APIPaginationHW />
     </>
   );
 }
