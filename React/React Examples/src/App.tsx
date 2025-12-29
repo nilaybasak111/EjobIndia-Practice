@@ -54,6 +54,8 @@ import OCT11APIPaginationHW from "./Data Display From Backend API/11OCT_ Paginat
 import OCT12InputValidationEx1 from "./Input Validation Formik Yup/12OCT_Input Validation_ex1";
 import OCT12InputValidationEx2 from "./Input Validation Formik Yup/12OCT_Input Validation_ex2";
 import OCT12InputValidationEx3 from "./Input Validation Formik Yup/12OCT_Input Validation_ex3";
+import OCT18FetchGetEx1 from "./Data Display From Backend API/18OCT_ Fetch Get _ex1";
+import OCT18FetchPostEx1 from "./Data Display From Backend API/18OCT_ Fetch Post _ex1";
 
 function App() {
   return (
@@ -113,8 +115,10 @@ function App() {
       <OCT11APIPaginationEx2 />
       <OCT11APIPaginationHW />
       <OCT12InputValidationEx1 />
-      <OCT12InputValidationEx2 /> */}
-      <OCT12InputValidationEx3 />
+      <OCT12InputValidationEx2 />
+      <OCT12InputValidationEx3 /> */}
+      {/* <OCT18FetchGetEx1 /> */}
+      <OCT18FetchPostEx1 />
     </>
   );
 }
