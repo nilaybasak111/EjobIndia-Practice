@@ -1,0 +1,134 @@
+REACT JS INTERVIEW QUESTIONS :
+----------------------------
+
+Basic React JS Questions
+
+What is React and why is it used?
+What are components in React?
+Explain the difference between functional and class components.
+What is JSX?
+What are props in React?
+What is state in React? How is it different from props?
+How do you handle events in React?
+What is the virtual DOM and how does it work in React?
+What is the role of key prop in lists?
+What is the purpose of useState hook?
+
+⚙️ React Hooks and Functional Components :
+
+What are React Hooks? Name a few commonly used ones.
+Explain useEffect and give an example use case.
+What is the difference between useEffect and componentDidMount?
+What is the use of useRef hook?
+What is useContext and how do you use it?
+
+⚛️ React Lifecycle and Rendering :
+
+What are the lifecycle methods of a class component?
+How does conditional rendering work in React?
+What is memoization in React? Explain React.memo.
+What are controlled and uncontrolled components?
+What is reconciliation in React?
+How does React handle performance optimization?
+What is lazy loading and how do you implement it in React?
+What is Suspense in React?
+
+📦 React with Ecosystem:
+
+What is Redux and when would you use it?
+What is the difference between Redux and Context API?
+What is React Router and how do you configure routing?
+What is a custom hook? Give an example.
+How do you handle forms in React? What is Formik/Yup?
+
+🌐 Project and Practical Questions:
+
+Explain a small React project you’ve built.
+How do you make API calls in React?
+What is Axios and how is it used in React?
+How do you manage state in a large React application?
+How do you debug React applications?
+
+1. What is JSX?
+2. What is a component in react ?
+3. Difference between class components and function components?
+4. What is the virtual DOM?
+5. How do you create a React app?
+6. What is the use of render() in React?
+7. How routing is done in react components?
+8. How do you update the state of a component?
+9. Explain lifecycle methods in react class component.
+10.What is axios ?Why it is used?
+11.Why props are used?
+12.Difference between state and props.
+13.How do you pass props between components?
+14.What is Redux?
+15.What are the components of Redux?
+16.What do you understand by refs in React?
+17.How is React Router different from Conventional Routing?
+18.What is Virtual DOM?
+19.What are controlled components?
+20.What are uncontrolled components?
+21.What is the difference between createElement and cloneElement?
+22.What is Lifting State Up in React?
+23.What are the different phases of component lifecycle?
+24.What are the lifecycle methods of React?
+6	How to create components in React?
+7	When to use a Class Component over a Function Component?
+8	What are Pure Components?
+9	What is state in React?
+10	What are props in React?
+11	What is the difference between state and props?
+12	What is the difference between HTML and React event handling?
+13	What are synthetic events in React?
+14	What are inline conditional expressions?
+15	What is "key" prop and what is the benefit of using it in arrays of elements?
+16	What is Virtual DOM?
+17	How Virtual DOM works?
+18	What is the difference between Shadow DOM and Virtual DOM?
+19	What is React Fiber?
+20	What is the main goal of React Fiber?
+21	What are controlled components?
+22	What are uncontrolled components?
+23	What is the difference between createElement and cloneElement?
+24	What is Lifting State Up in React?
+26	What is children prop?
+27	How to write comments in React?
+28	What is reconciliation?
+29	Does the lazy function support named exports?
+30	Why React uses className over class attribute?
+31	What are fragments?
+32	Why fragments are better than container divs?
+33	What are portals in React?
+34	What are stateless components?
+35	What are stateful components?
+36	How to apply validation on props in React?
+37	What are the advantages of React?
+38	What are the limitations of React?
+39	What are the recommended ways for static type checking?
+40	What is the use of react-dom package?
+41	What is ReactDOMServer?
+42	How to use InnerHtml in React?
+43	How to use styles in React?
+44	How events are different in React?
+45	What is the impact of indexes as keys?
+46	How do you conditionally render components?
+47	Why we need to be careful when spreading props on DOM elements??
+48	How do you memoize a component?
+49	How you implement Server-Side Rendering or SSR?
+50	How to enable production mode in React?
+51	Do Hooks replace render props and higher order components?
+52	What is a switching component?
+53	What are React Mixins?
+54	What are the Pointer Events supported in React?
+55	Why should component names start with capital letter?
+56	Are custom DOM attributes supported in React v16?
+57	How to loop inside JSX?
+58	How do you access props in attribute quotes?
+59	What is React PropType array with shape?
+60	How to conditionally apply class attributes?
+61	What is the difference between React and ReactDOM?
+62	Why ReactDOM is separated from React?
+63	How to use React label element?
+64	How to combine multiple inline style objects?
+65	How to re-render the view when the browser is resized?

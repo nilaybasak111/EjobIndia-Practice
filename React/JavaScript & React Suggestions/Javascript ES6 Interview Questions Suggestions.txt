@@ -1,0 +1,58 @@
+JavaScript ES6 interview questions :
+-----------------------------------
+
+
+Basic ES6 Interview Questions:
+
+What is ES6 and why is it important?
+What are the main features introduced in ES6?
+What is the difference between var, let, and const?
+What are arrow functions? How are they different from regular functions?
+Explain template literals with an example.
+what is closure?
+what is prototype?
+what is nested function?
+
+
+📦 Destructuring and Spread/Rest Operators : 
+
+What is array destructuring in ES6?
+What is object destructuring?
+What are the spread and rest operators? Explain with examples.
+How does the rest parameter differ from the arguments object?
+
+🧱 Objects and Classes :
+
+What is object shorthand in ES6?
+How do you create classes in ES6?
+What is the difference between class and function constructors?
+What are getters and setters in ES6 classes?
+Explain inheritance using extends and super.
+
+🔁 Loops and Iterators :
+
+What is the for...of loop? How is it different from for...in?
+What are iterables and generators in ES6?
+What is a generator function and how do you use yield?
+
+⚙️ Modules in ES6 :
+
+How do you export and import modules in ES6?
+What is the difference between default export and named export?
+How do ES6 modules differ from CommonJS modules (like in Node.js)?
+
+🔐 Promises and Async/Await :
+
+What is a Promise in ES6?
+How do you handle asynchronous code using promises?
+What is async/await in ES6? How does it improve readability?
+What is the difference between async/await and .then() chaining?
+
+🧠 Miscellaneous ES6 Questions :
+
+What is a symbol in ES6 and where is it used?
+What is a Map and a Set in ES6?
+What are default parameters in ES6?
+What is the use of includes() method in arrays?
+How does block scoping work in let and const?
+What is tail call optimization in ES6?
