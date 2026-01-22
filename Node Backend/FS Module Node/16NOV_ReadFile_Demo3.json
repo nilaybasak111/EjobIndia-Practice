@@ -1,0 +1,6 @@
+{
+    "name" : "Nilay Basak",
+    "age" : 24,
+    "location" : "Kolkata",
+    "skills" : ["MongoDB", "JS", "React"]
+}
