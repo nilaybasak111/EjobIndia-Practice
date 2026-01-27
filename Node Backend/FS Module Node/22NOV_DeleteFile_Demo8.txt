@@ -1,0 +1,1 @@
+A part of a piece of writing that consists of one or more sentences. A paragraph always starts on a new line.

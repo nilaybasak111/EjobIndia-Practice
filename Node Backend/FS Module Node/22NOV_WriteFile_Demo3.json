@@ -1,0 +1,10 @@
+{
+    "name": "Node Backend",
+    "message": "Testing Demo2 fs.writeFile",
+    "info": {
+      "name": "Nilay Basak",
+      "age": 24,
+      "location": "Kolkata",
+      "skills": ["MongoDB", "JS", "React"]
+    }
+  }

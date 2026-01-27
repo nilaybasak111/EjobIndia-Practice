@@ -1,0 +1,12 @@
+use 22NOV_Basic_MongoDB; // Go to the 22NOV_Basic_MongoDB Database
+
+db.createCollection("basicMongoDB"); // Create a collection named "basicMongoDB"
+
+db.basicMongoDB.insertOne({name:"John", age:30, location:"New York", dept:"IT"}); // Insert a document into the "basicMongoDB" collection
+
+db.basicMongoDB.insertMany([
+    {name:"John", age:30, location:"New York", dept:"IT"},
+    {name:"Nil", age:24, location:"Nabadwip", dept:"IT"},
+    {name:"Ayan", age:25, location:"Kolkata", dept:"Physics"}    
+]); // Insert multiple documents into the "basicMongoDB" collection
+

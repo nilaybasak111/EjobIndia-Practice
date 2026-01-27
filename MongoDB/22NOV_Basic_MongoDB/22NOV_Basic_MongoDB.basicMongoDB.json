@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "69367f0aa957296092cbb69d"
+  },
+  "name": "Nilay Basak",
+  "age": 24,
+  "location": "Nabadwip",
+  "dept": "IT"
+},
+{
+  "_id": {
+    "$oid": "69367f77a957296092cbb69e"
+  },
+  "name": "Tonoy Basak",
+  "age": 28,
+  "location": "Nabadwip",
+  "dept": "Civil"
+},
+{
+  "_id": {
+    "$oid": "69367f77a957296092cbb69f"
+  },
+  "name": "Ayan",
+  "age": 25,
+  "location": "Kolkata",
+  "dept": "Physics"
+},
+{
+  "_id": {
+    "$oid": "69367f77a957296092cbb6a0"
+  },
+  "name": "Dwip",
+  "age": 27,
+  "location": "Nabadwip",
+  "dept": "English"
+}]
